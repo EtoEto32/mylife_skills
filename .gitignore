@@ -1,0 +1,11 @@
+# Local Windows junctions; recreate with setup-skills.ps1.
+/.agents/skills/
+/.claude/skills/
+/skills/marp-creator
+/skills/slide-story
+/skills/slide-design-dark
+/skills/slide-figures
+/skills/yomiyasu
+
+# Bundled runtime dependencies are supplied by Codex on each PC.
+/.build-slides/node_modules/
