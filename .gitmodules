@@ -1,0 +1,12 @@
+[submodule "classmethod-marp-theme"]
+	path = classmethod-marp-theme
+	url = https://github.com/classmethod/classmethod-marp-theme.git
+[submodule "minorun-marp-skill"]
+	path = minorun-marp-skill
+	url = https://github.com/minorun365/minorun-marp-skill.git
+[submodule "satori"]
+	path = satori
+	url = https://github.com/nahisaho/satori.git
+[submodule "yomiyasu"]
+	path = yomiyasu
+	url = https://github.com/nanaism/yomiyasu.git
