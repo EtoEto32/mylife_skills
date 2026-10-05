@@ -12,8 +12,7 @@ node_modules/
 
 # Generated presentations, previews, and validation outputs.
 /outputs/
-/.build-slides/*
-!/.build-slides/build.mjs
+/.build-slides/
 /artifacts/*/output/
 /artifacts/*/.chart-data-*/
 /artifacts/*/build/*
