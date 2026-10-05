@@ -1,0 +1,509 @@
+{"kind":"deck","id":"pr/2tmf3i","name":"Deck"}
+{"kind":"layout","layoutId":"1887b299-7a2f-4371-8abc-c886836f151e","name":"Master","type":"master"}
+{"kind":"layout","layoutId":"18c9fa78-eab9-4f09-b633-72319f129b6d","name":"Title Slide","type":"title"}
+{"kind":"slide","id":"sl/wcfbgk","slide":1,"title":"研究発表テンプレート","textShapes":5}
+{"kind":"textbox","id":"sh/qx4fidcv","slide":1,"text":"研究発表テンプレート","textPreview":"研究発表テンプレート","textChars":10,"textLines":1,"bbox":[72,48,1136,74]}
+{"kind":"shape","id":"sh/d0fyd8v6","slide":1,"bbox":[72,135,60,4]}
+{"kind":"textbox","id":"sh/szmxknu1","slide":1,"text":"01","textPreview":"01","textChars":2,"textLines":1,"bbox":[1150,656,60,30]}
+{"kind":"textbox","id":"sh/3udg7yd4","slide":1,"text":"難読化されたWebAssembly\nクリプトジャッキングの\n検知耐性評価","textPreview":"難読化されたWebAssembly | クリプトジャッキングの | 検知耐性評価","textChars":36,"textLines":3,"bbox":[72,182,1090,245]}
+{"kind":"textbox","id":"sh/it4fetcj","slide":1,"text":"wasm-mutateによるバイナリ多様化とコード正規化","textPreview":"wasm-mutateによるバイナリ多様化とコード正規化","textChars":28,"textLines":1,"bbox":[72,455,1100,65]}
+{"kind":"textbox","id":"sh/5wvy98va","slide":1,"text":"［氏名］  ［所属］\n［発表日］","textPreview":"［氏名］  ［所属］ | ［発表日］","textChars":16,"textLines":2,"bbox":[72,569,900,66]}
+{"kind":"notes","id":"nt/wcfbgk","slide":1,"text":"提供資料：30枚構成（貼り付けたテキスト.txt）。計画・仮説・進捗は提供資料に基づく。［ ］は差し替え欄。"}
+{"kind":"slide","id":"sl/xac9ex","slide":2,"title":"研究の全体像","textShapes":15}
+{"kind":"textbox","id":"sh/sfipcje1","slide":2,"text":"研究の全体像","textPreview":"研究の全体像","textChars":6,"textLines":1,"bbox":[72,48,1136,74]}
+{"kind":"shape","id":"sh/re983edg","slide":2,"bbox":[72,135,60,4]}
+{"kind":"textbox","id":"sh/qd07a9wv","slide":2,"text":"コードの形を変えたときの検知結果と、正規化の効果を比較する","textPreview":"コードの形を変えたときの検知結果と、正規化の効果を比較する","textChars":29,"textLines":1,"bbox":[72,166,1120,76]}
+{"kind":"textbox","id":"sh/14bq98vi","slide":2,"text":"02","textPreview":"02","textChars":2,"textLines":1,"bbox":[1150,656,60,30]}
+{"kind":"shape","id":"sh/032pg3ux","slide":2,"bbox":[72,306,260,204]}
+{"kind":"textbox","id":"sh/f2t87ydc","slide":2,"text":"01","textPreview":"01","textChars":2,"textLines":1,"bbox":[94,326,216,40]}
+{"kind":"textbox","id":"sh/e107etcr","slide":2,"text":"検体","textPreview":"検体","textChars":2,"textLines":1,"bbox":[94,372,216,64]}
+{"kind":"textbox","id":"sh/h876x4ve","slide":2,"text":"元Wasmを用意","textPreview":"元Wasmを用意","textChars":8,"textLines":1,"bbox":[94,445,216,60]}
+{"kind":"shape","id":"sh/g7yp4zet","slide":2,"bbox":[332,383,32,2]}
+{"kind":"shape","id":"sh/uh83mdcf","slide":2,"bbox":[364,306,260,204]}
+{"kind":"textbox","id":"sh/vihkfit0","slide":2,"text":"02","textPreview":"02","textChars":2,"textLines":1,"bbox":[386,326,216,40]}
+{"kind":"textbox","id":"sh/wjqlo3ul","slide":2,"text":"変異","textPreview":"変異","textChars":2,"textLines":1,"bbox":[386,372,216,64]}
+{"kind":"textbox","id":"sh/hkz2h8b6","slide":2,"text":"意味を保つ変形","textPreview":"意味を保つ変形","textChars":7,"textLines":1,"bbox":[386,445,216,60]}
+{"kind":"shape","id":"sh/il83qdcr","slide":2,"bbox":[624,383,32,2]}
+{"kind":"shape","id":"sh/jmhkjitw","slide":2,"bbox":[656,306,260,204]}
+{"kind":"textbox","id":"sh/4nalsnuh","slide":2,"text":"03","textPreview":"03","textChars":2,"textLines":1,"bbox":[678,326,216,40]}
+{"kind":"textbox","id":"sh/58j2lsb2","slide":2,"text":"評価","textPreview":"評価","textChars":2,"textLines":1,"bbox":[678,372,216,64]}
+{"kind":"textbox","id":"sh/69s3excn","slide":2,"text":"実製品で比較","textPreview":"実製品で比較","textChars":6,"textLines":1,"bbox":[678,445,216,60]}
+{"kind":"shape","id":"sh/ra14n2t8","slide":2,"bbox":[916,383,32,2]}
+{"kind":"shape","id":"sh/3elkb29g","slide":2,"bbox":[948,306,260,204]}
+{"kind":"textbox","id":"sh/2dsj2x8v","slide":2,"text":"04","textPreview":"04","textChars":2,"textLines":1,"bbox":[970,326,216,40]}
+{"kind":"textbox","id":"sh/pg32dsr6","slide":2,"text":"正規化","textPreview":"正規化","textChars":3,"textLines":1,"bbox":[970,372,216,64]}
+{"kind":"textbox","id":"sh/ofu147ql","slide":2,"text":"共通表現で再評価","textPreview":"共通表現で再評価","textChars":8,"textLines":1,"bbox":[970,445,216,60]}
+{"kind":"notes","id":"nt/xac9ex","slide":2,"text":"提供資料：30枚構成（貼り付けたテキスト.txt）。計画・仮説・進捗は提供資料に基づく。［ ］は差し替え欄。"}
+{"kind":"slide","id":"sl/m5e3x2","slide":3,"title":"今日の相談事項","textShapes":9}
+{"kind":"textbox","id":"sh/ml4bet8j","slide":3,"text":"今日の相談事項","textPreview":"今日の相談事項","textChars":7,"textLines":1,"bbox":[72,48,1136,74]}
+{"kind":"shape","id":"sh/9ovap87a","slide":3,"bbox":[72,135,60,4]}
+{"kind":"textbox","id":"sh/onmtg3qp","slide":3,"text":"実験設計を固めるために、StarBEDでの運用条件を確認する","textPreview":"実験設計を固めるために、StarBEDでの運用条件を確認する","textChars":30,"textLines":1,"bbox":[72,166,1120,76]}
+{"kind":"textbox","id":"sh/vaxsrip0","slide":3,"text":"03","textPreview":"03","textChars":2,"textLines":1,"bbox":[1150,656,60,30]}
+{"kind":"shape","id":"sh/apobid8v","slide":3,"bbox":[72,288,362.67,270]}
+{"kind":"textbox","id":"sh/xcfuts76","slide":3,"text":"ネットワーク","textPreview":"ネットワーク","textChars":6,"textLines":1,"bbox":[98,316,310.67,74]}
+{"kind":"textbox","id":"sh/wb6tknql","slide":3,"text":"実験系と管理系の分離\nEDRの外部接続","textPreview":"実験系と管理系の分離 | EDRの外部接続","textChars":19,"textLines":2,"bbox":[98,400,310.67,130]}
+{"kind":"shape","id":"sh/jexcvipc","slide":3,"bbox":[458.67,288,362.67,270]}
+{"kind":"textbox","id":"sh/idobmd8r","slide":3,"text":"観測","textPreview":"観測","textChars":2,"textLines":1,"bbox":[484.67,316,310.67,74]}
+{"kind":"textbox","id":"sh/cjydofu1","slide":3,"text":"ログ収集\n時刻同期","textPreview":"ログ収集 | 時刻同期","textChars":9,"textLines":2,"bbox":[484.67,400,310.67,130]}
+{"kind":"shape","id":"sh/xk7ehkbm","slide":3,"bbox":[845.33,288,362.67,270]}
+{"kind":"textbox","id":"sh/axwvmpcb","slide":3,"text":"実験運用","textPreview":"実験運用","textChars":4,"textLines":1,"bbox":[871.33,316,310.67,74]}
+{"kind":"textbox","id":"sh/by5wfatw","slide":3,"text":"安全性と再現性\n実験規模と復元方法","textPreview":"安全性と再現性 | 実験規模と復元方法","textChars":17,"textLines":2,"bbox":[871.33,400,310.67,130]}
+{"kind":"notes","id":"nt/m5e3x2","slide":3,"text":"提供資料：30枚構成（貼り付けたテキスト.txt）。計画・仮説・進捗は提供資料に基づく。［ ］は差し替え欄。"}
+{"kind":"slide","id":"sl/8pev9n","slide":4,"title":"WebAssemblyとは","textShapes":13}
+{"kind":"textbox","id":"sh/qlcf2x03","slide":4,"text":"WebAssemblyとは","textPreview":"WebAssemblyとは","textChars":13,"textLines":1,"bbox":[72,48,1136,74]}
+{"kind":"shape","id":"sh/donydcje","slide":4,"bbox":[72,135,60,4]}
+{"kind":"textbox","id":"sh/cnex47it","slide":4,"text":"Wasmは、ブラウザ内外で動くバイナリ命令形式","textPreview":"Wasmは、ブラウザ内外で動くバイナリ命令形式","textChars":23,"textLines":1,"bbox":[72,166,1120,76]}
+{"kind":"textbox","id":"sh/za5gfm1k","slide":4,"text":"04","textPreview":"04","textChars":2,"textLines":1,"bbox":[1150,656,60,30]}
+{"kind":"shape","id":"sh/ypwf6h0z","slide":4,"bbox":[72,306,357.33,204]}
+{"kind":"textbox","id":"sh/lcnyhcjq","slide":4,"text":"01","textPreview":"01","textChars":2,"textLines":1,"bbox":[94,326,313.33,40]}
+{"kind":"textbox","id":"sh/0bex87i5","slide":4,"text":"ソース","textPreview":"ソース","textChars":3,"textLines":1,"bbox":[94,372,313.33,64]}
+{"kind":"textbox","id":"sh/nepgjmhg","slide":4,"text":"C/C++、Rustなど","textPreview":"C/C++、Rustなど","textChars":12,"textLines":1,"bbox":[94,445,313.33,60]}
+{"kind":"shape","id":"sh/mdgfah0b","slide":4,"bbox":[429.33,383,32,2]}
+{"kind":"shape","id":"sh/ob61c3i9","slide":4,"bbox":[461.33,306,357.33,204]}
+{"kind":"textbox","id":"sh/pcfil8ju","slide":4,"text":"02","textPreview":"02","textChars":2,"textLines":1,"bbox":[483.33,326,313.33,40]}
+{"kind":"textbox","id":"sh/29ojat0j","slide":4,"text":"コンパイル","textPreview":"コンパイル","textChars":5,"textLines":1,"bbox":[483.33,372,313.33,64]}
+{"kind":"textbox","id":"sh/nax0jy1o","slide":4,"text":"WebAssembly","textPreview":"WebAssembly","textChars":11,"textLines":1,"bbox":[483.33,445,313.33,60]}
+{"kind":"shape","id":"sh/cfq1g3il","slide":4,"bbox":[818.67,383,32,2]}
+{"kind":"shape","id":"sh/x0zip8j6","slide":4,"bbox":[850.67,306,357.33,204]}
+{"kind":"textbox","id":"sh/ad8jed0f","slide":4,"text":"03","textPreview":"03","textChars":2,"textLines":1,"bbox":[872.67,326,313.33,40]}
+{"kind":"textbox","id":"sh/beh0ni10","slide":4,"text":"実行","textPreview":"実行","textChars":2,"textLines":1,"bbox":[872.67,372,313.33,64]}
+{"kind":"textbox","id":"sh/k3q1knih","slide":4,"text":"ブラウザ・ランタイム","textPreview":"ブラウザ・ランタイム","textChars":10,"textLines":1,"bbox":[872.67,445,313.33,60]}
+{"kind":"textbox","id":"sh/l4zitsj2","slide":4,"text":"出典：https://webassembly.org/","textPreview":"出典：https://webassembly.org/","textChars":27,"textLines":1,"bbox":[72,610,1090,40]}
+{"kind":"notes","id":"nt/8pev9n","slide":4,"text":"提供資料：30枚構成（貼り付けたテキスト.txt）。計画・仮説・進捗は提供資料に基づく。［ ］は差し替え欄。\n添付資料が示す出典：https://webassembly.org/"}
+{"kind":"slide","id":"sl/ei354e","slide":5,"title":"ブラウザ内でWasmが動く仕組み","textShapes":15}
+{"kind":"textbox","id":"sh/hgvy1gj2","slide":5,"text":"ブラウザ内でWasmが動く仕組み","textPreview":"ブラウザ内でWasmが動く仕組み","textChars":16,"textLines":1,"bbox":[72,48,1136,74]}
+{"kind":"shape","id":"sh/utkf6lkb","slide":5,"bbox":[72,135,60,4]}
+{"kind":"textbox","id":"sh/vetgz61w","slide":5,"text":"HTML・JavaScript・Wasmが連携して計算を実行する","textPreview":"HTML・JavaScript・Wasmが連携して計算を実行する","textChars":32,"textLines":1,"bbox":[72,166,1120,76]}
+{"kind":"textbox","id":"sh/4jmhcv2t","slide":5,"text":"05","textPreview":"05","textChars":2,"textLines":1,"bbox":[1150,656,60,30]}
+{"kind":"shape","id":"sh/5kvy50je","slide":5,"bbox":[72,306,260,204]}
+{"kind":"textbox","id":"sh/ih4zalkn","slide":5,"text":"01","textPreview":"01","textChars":2,"textLines":1,"bbox":[94,326,216,40]}
+{"kind":"textbox","id":"sh/jidg3q18","slide":5,"text":"HTML","textPreview":"HTML","textChars":4,"textLines":1,"bbox":[94,372,216,64]}
+{"kind":"textbox","id":"sh/sn6hgv2p","slide":5,"text":"ページを取得","textPreview":"ページを取得","textChars":6,"textLines":1,"bbox":[94,445,216,60]}
+{"kind":"shape","id":"sh/tofy90ja","slide":5,"bbox":[332,383,32,2]}
+{"kind":"shape","id":"sh/10n618jy","slide":5,"bbox":[364,306,260,204]}
+{"kind":"textbox","id":"sh/0ze583id","slide":5,"text":"02","textPreview":"02","textChars":2,"textLines":1,"bbox":[386,326,216,40]}
+{"kind":"textbox","id":"sh/zy5ozy1s","slide":5,"text":"JavaScript","textPreview":"JavaScript","textChars":10,"textLines":1,"bbox":[386,372,216,64]}
+{"kind":"textbox","id":"sh/exwn6t0n","slide":5,"text":"Wasmをロード","textPreview":"Wasmをロード","textChars":8,"textLines":1,"bbox":[386,445,216,60]}
+{"kind":"shape","id":"sh/9on658ja","slide":5,"bbox":[624,383,32,2]}
+{"kind":"shape","id":"sh/one5w3ip","slide":5,"bbox":[656,306,260,204]}
+{"kind":"textbox","id":"sh/n25o3i14","slide":5,"text":"03","textPreview":"03","textChars":2,"textLines":1,"bbox":[678,326,216,40]}
+{"kind":"textbox","id":"sh/m1wnud0j","slide":5,"text":"Web Worker","textPreview":"Web Worker","textChars":10,"textLines":1,"bbox":[678,372,216,64]}
+{"kind":"textbox","id":"sh/ps3mtojq","slide":5,"text":"計算を実行","textPreview":"計算を実行","textChars":5,"textLines":1,"bbox":[678,445,216,60]}
+{"kind":"shape","id":"sh/4ru50ji5","slide":5,"bbox":[916,383,32,2]}
+{"kind":"shape","id":"sh/gby5gja1","slide":5,"bbox":[948,306,260,204]}
+{"kind":"textbox","id":"sh/hc769orm","slide":5,"text":"04","textPreview":"04","textChars":2,"textLines":1,"bbox":[970,326,216,40]}
+{"kind":"textbox","id":"sh/u9wne9sb","slide":5,"text":"WebSocket","textPreview":"WebSocket","textChars":9,"textLines":1,"bbox":[970,372,216,64]}
+{"kind":"textbox","id":"sh/va5o7e9g","slide":5,"text":"サービスと通信","textPreview":"サービスと通信","textChars":7,"textLines":1,"bbox":[970,445,216,60]}
+{"kind":"notes","id":"nt/ei354e","slide":5,"text":"提供資料：30枚構成（貼り付けたテキスト.txt）。計画・仮説・進捗は提供資料に基づく。［ ］は差し替え欄。"}
+{"kind":"slide","id":"sl/p1cekq","slide":6,"title":"Wasmの用途と悪用","textShapes":7}
+{"kind":"textbox","id":"sh/fi50rido","slide":6,"text":"Wasmの用途と悪用","textPreview":"Wasmの用途と悪用","textChars":10,"textLines":1,"bbox":[72,48,1136,74]}
+{"kind":"shape","id":"sh/gjehknu9","slide":6,"bbox":[72,135,60,4]}
+{"kind":"textbox","id":"sh/1knitsve","slide":6,"text":"用途と利用者の同意を踏まえて、悪性を判断する","textPreview":"用途と利用者の同意を踏まえて、悪性を判断する","textChars":22,"textLines":1,"bbox":[72,166,1120,76]}
+{"kind":"textbox","id":"sh/2lwzmxcz","slide":6,"text":"06","textPreview":"06","textChars":2,"textLines":1,"bbox":[1150,656,60,30]}
+{"kind":"shape","id":"sh/3m50v2dk","slide":6,"bbox":[72,288,556,270]}
+{"kind":"textbox","id":"sh/oneho7u5","slide":6,"text":"正当な用途","textPreview":"正当な用途","textChars":5,"textLines":1,"bbox":[98,316,504,74]}
+{"kind":"textbox","id":"sh/po7ixcvq","slide":6,"text":"ゲーム・画像処理\n動画処理・科学計算","textPreview":"ゲーム・画像処理 | 動画処理・科学計算","textChars":18,"textLines":2,"bbox":[98,400,504,130]}
+{"kind":"shape","id":"sh/qpgzqxcb","slide":6,"bbox":[652,288,556,270]}
+{"kind":"textbox","id":"sh/bqp0z2dw","slide":6,"text":"悪用の例","textPreview":"悪用の例","textChars":4,"textLines":1,"bbox":[678,316,504,74]}
+{"kind":"textbox","id":"sh/faxg7ah4","slide":6,"text":"無断マイニング\nマルウェア処理の隠蔽","textPreview":"無断マイニング | マルウェア処理の隠蔽","textChars":18,"textLines":2,"bbox":[678,400,504,130]}
+{"kind":"notes","id":"nt/p1cekq","slide":6,"text":"提供資料：30枚構成（貼り付けたテキスト.txt）。計画・仮説・進捗は提供資料に基づく。［ ］は差し替え欄。"}
+{"kind":"slide","id":"sl/52bgwv","slide":7,"title":"クリプトジャッキングの関係図","textShapes":13}
+{"kind":"textbox","id":"sh/lczax0ne","slide":7,"text":"クリプトジャッキングの関係図","textPreview":"クリプトジャッキングの関係図","textChars":14,"textLines":1,"bbox":[72,48,1136,74]}
+{"kind":"shape","id":"sh/ep8r2lon","slide":7,"bbox":[72,135,60,4]}
+{"kind":"textbox","id":"sh/zqhsvq58","slide":7,"text":"利用者の同意なく計算資源をマイニングに使用する","textPreview":"利用者の同意なく計算資源をマイニングに使用する","textChars":23,"textLines":1,"bbox":[72,166,1120,76]}
+{"kind":"textbox","id":"sh/cnq90b6h","slide":7,"text":"07","textPreview":"07","textChars":2,"textLines":1,"bbox":[1150,656,60,30]}
+{"kind":"shape","id":"sh/dozatgn2","slide":7,"bbox":[72,306,357.33,204]}
+{"kind":"textbox","id":"sh/qlorylor","slide":7,"text":"01","textPreview":"01","textChars":2,"textLines":1,"bbox":[94,326,313.33,40]}
+{"kind":"textbox","id":"sh/rmhsrq5w","slide":7,"text":"配信サーバー","textPreview":"配信サーバー","textChars":6,"textLines":1,"bbox":[94,372,313.33,64]}
+{"kind":"textbox","id":"sh/wjatcf61","slide":7,"text":"ページとWasmを配信","textPreview":"ページとWasmを配信","textChars":11,"textLines":1,"bbox":[94,445,313.33,60]}
+{"kind":"shape","id":"sh/xkja5knm","slide":7,"bbox":[429.33,383,32,2]}
+{"kind":"shape","id":"sh/l4fah432","slide":7,"bbox":[461.33,306,357.33,204]}
+{"kind":"textbox","id":"sh/k36toz2h","slide":7,"text":"02","textPreview":"02","textChars":2,"textLines":1,"bbox":[483.33,326,313.33,40]}
+{"kind":"textbox","id":"sh/zixsfulc","slide":7,"text":"利用者のブラウザ","textPreview":"利用者のブラウザ","textChars":8,"textLines":1,"bbox":[483.33,372,313.33,64]}
+{"kind":"textbox","id":"sh/yhobmpkr","slide":7,"text":"計算資源を消費","textPreview":"計算資源を消費","textChars":7,"textLines":1,"bbox":[483.33,445,313.33,60]}
+{"kind":"shape","id":"sh/xgfad436","slide":7,"bbox":[818.67,383,32,2]}
+{"kind":"shape","id":"sh/cf6tkz2l","slide":7,"bbox":[850.67,306,357.33,204]}
+{"kind":"textbox","id":"sh/bedsbul0","slide":7,"text":"03","textPreview":"03","textChars":2,"textLines":1,"bbox":[872.67,326,313.33,40]}
+{"kind":"textbox","id":"sh/ad4bipkf","slide":7,"text":"マイニングプール","textPreview":"マイニングプール","textChars":8,"textLines":1,"bbox":[872.67,372,313.33,64]}
+{"kind":"textbox","id":"sh/hczupo3a","slide":7,"text":"計算結果を受信","textPreview":"計算結果を受信","textChars":7,"textLines":1,"bbox":[872.67,445,313.33,60]}
+{"kind":"textbox","id":"sh/wbqtwj2p","slide":7,"text":"実験では、配信・実行・プールを管理下の環境に置く","textPreview":"実験では、配信・実行・プールを管理下の環境に置く","textChars":24,"textLines":1,"bbox":[72,610,1090,40]}
+{"kind":"notes","id":"nt/52bgwv","slide":7,"text":"提供資料：30枚構成（貼り付けたテキスト.txt）。計画・仮説・進捗は提供資料に基づく。［ ］は差し替え欄。"}
+{"kind":"slide","id":"sl/5vanss","slide":8,"title":"検知が難しい理由","textShapes":9}
+{"kind":"textbox","id":"sh/47y1ovyp","slide":8,"text":"検知が難しい理由","textPreview":"検知が難しい理由","textChars":8,"textLines":1,"bbox":[72,48,1136,74]}
+{"kind":"shape","id":"sh/36p0vqx4","slide":8,"bbox":[72,135,60,4]}
+{"kind":"textbox","id":"sh/ilgjm5gj","slide":8,"text":"コードの特徴と実行時の挙動の両方を確認する必要がある","textPreview":"コードの特徴と実行時の挙動の両方を確認する必要がある","textChars":26,"textLines":1,"bbox":[72,166,1120,76]}
+{"kind":"textbox","id":"sh/dcri1kf6","slide":8,"text":"08","textPreview":"08","textChars":2,"textLines":1,"bbox":[1150,656,60,30]}
+{"kind":"shape","id":"sh/sbi1sfy1","slide":8,"bbox":[72,288,362.67,270]}
+{"kind":"textbox","id":"sh/ra90zaxg","slide":8,"text":"外見の変化","textPreview":"外見の変化","textChars":5,"textLines":1,"bbox":[98,316,310.67,74]}
+{"kind":"textbox","id":"sh/q9gjq5gv","slide":8,"text":"バイナリ多様化\n処理の分散","textPreview":"バイナリ多様化 | 処理の分散","textChars":13,"textLines":2,"bbox":[98,400,310.67,130]}
+{"kind":"shape","id":"sh/tgnipgz2","slide":8,"bbox":[458.67,288,362.67,270]}
+{"kind":"textbox","id":"sh/8fehgbyh","slide":8,"text":"挙動の重なり","textPreview":"挙動の重なり","textChars":6,"textLines":1,"bbox":[484.67,316,310.67,74]}
+{"kind":"textbox","id":"sh/25gz61sr","slide":8,"text":"高負荷な良性計算\n暗号処理の多様性","textPreview":"高負荷な良性計算 | 暗号処理の多様性","textChars":17,"textLines":2,"bbox":[484.67,400,310.67,130]}
+{"kind":"shape","id":"sh/36p0z6tc","slide":8,"bbox":[845.33,288,362.67,270]}
+{"kind":"textbox","id":"sh/4ry18bax","slide":8,"text":"判定の条件","textPreview":"判定の条件","textChars":5,"textLines":1,"bbox":[871.33,316,310.67,74]}
+{"kind":"textbox","id":"sh/psri1gri","slide":8,"text":"利用者の同意\nCPU負荷だけの誤検知","textPreview":"利用者の同意 | CPU負荷だけの誤検知","textChars":18,"textLines":2,"bbox":[871.33,400,310.67,130]}
+{"kind":"notes","id":"nt/5vanss","slide":8,"text":"提供資料：30枚構成（貼り付けたテキスト.txt）。計画・仮説・進捗は提供資料に基づく。［ ］は差し替え欄。"}
+{"kind":"slide","id":"sl/q9s6bl","slide":9,"title":"既存の検知方式","textShapes":10}
+{"kind":"textbox","id":"sh/9gvqlkbe","slide":9,"text":"既存の検知方式","textPreview":"既存の検知方式","textChars":7,"textLines":1,"bbox":[72,48,1136,74]}
+{"kind":"shape","id":"sh/md4ra5s3","slide":9,"bbox":[72,135,60,4]}
+{"kind":"textbox","id":"sh/ned8jato","slide":9,"text":"検知器が参照する特徴によって、変異の影響は異なる","textPreview":"検知器が参照する特徴によって、変異の影響は異なる","textChars":24,"textLines":1,"bbox":[72,166,1120,76]}
+{"kind":"textbox","id":"sh/wjm9gfa5","slide":9,"text":"09","textPreview":"09","textChars":2,"textLines":1,"bbox":[1150,656,60,30]}
+{"kind":"shape","id":"sh/xkfqpkbq","slide":9,"bbox":[72,266,1136,1]}
+{"kind":"textbox","id":"sh/ah4re5sz","slide":9,"text":"静的特徴","textPreview":"静的特徴","textChars":4,"textLines":1,"bbox":[88,282,274,52]}
+{"kind":"textbox","id":"sh/vid8natk","slide":9,"text":"ハッシュ、シグネチャ、命令、バイナリ画像","textPreview":"ハッシュ、シグネチャ、命令、バイナリ画像","textChars":20,"textLines":1,"bbox":[370,282,814,52]}
+{"kind":"shape","id":"sh/cn2p4va1","slide":9,"bbox":[72,344,1136,1]}
+{"kind":"textbox","id":"sh/dobqd0bm","slide":9,"text":"動的特徴","textPreview":"動的特徴","textChars":4,"textLines":1,"bbox":[88,360,274,52]}
+{"kind":"textbox","id":"sh/1072xo3a","slide":9,"text":"CPU使用率、通信、実行時イベント","textPreview":"CPU使用率、通信、実行時イベント","textChars":17,"textLines":1,"bbox":[370,360,814,52]}
+{"kind":"shape","id":"sh/0zyloj2p","slide":9,"bbox":[72,422,1136,1]}
+{"kind":"textbox","id":"sh/zypkvel4","slide":9,"text":"意味ベース解析","textPreview":"意味ベース解析","textChars":7,"textLines":1,"bbox":[88,438,274,52]}
+{"kind":"textbox","id":"sh/exw3m9kz","slide":9,"text":"ハッシュ処理などの意味を解析するMinerRay","textPreview":"ハッシュ処理などの意味を解析するMinerRay","textChars":24,"textLines":1,"bbox":[370,438,814,52]}
+{"kind":"textbox","id":"sh/9o72183m","slide":9,"text":"出典：MinerRay論文（添付資料のURL参照）","textPreview":"出典：MinerRay論文（添付資料のURL参照）","textChars":25,"textLines":1,"bbox":[72,610,1090,40]}
+{"kind":"notes","id":"nt/q9s6bl","slide":9,"text":"提供資料：30枚構成（貼り付けたテキスト.txt）。計画・仮説・進捗は提供資料に基づく。［ ］は差し替え欄。\n添付資料が示す出典：https://d3ccyth396mz21.cloudfront.net/publications/minerray-semantics-aware-analysis-for-ever-evolving-cryptojacking-detection"}
+{"kind":"slide","id":"sl/da1s9l","slide":10,"title":"元となる先行研究","textShapes":9}
+{"kind":"textbox","id":"sh/s325wz6l","slide":10,"text":"元となる先行研究","textPreview":"元となる先行研究","textChars":8,"textLines":1,"bbox":[72,48,1136,74]}
+{"kind":"shape","id":"sh/r2t4nup0","slide":10,"bbox":[72,135,60,4]}
+{"kind":"textbox","id":"sh/610nupov","slide":10,"text":"Wasmの多様化による検知回避を報告している","textPreview":"Wasmの多様化による検知回避を報告している","textChars":22,"textLines":1,"bbox":[72,166,1120,76]}
+{"kind":"textbox","id":"sh/18b6t47i","slide":10,"text":"10","textPreview":"10","textChars":2,"textLines":1,"bbox":[1150,656,60,30]}
+{"kind":"textbox","id":"sh/g7250z6x","slide":10,"text":"WebAssembly Diversification\nfor Malware Evasion","textPreview":"WebAssembly Diversification | for Malware Evasion","textChars":47,"textLines":2,"bbox":[72,280,1100,132]}
+{"kind":"shape","id":"sh/f6torepc","slide":10,"bbox":[72,447,1136,1]}
+{"kind":"textbox","id":"sh/e5kny9or","slide":10,"text":"変異・探索","textPreview":"変異・探索","textChars":5,"textLines":1,"bbox":[88,463,274,52]}
+{"kind":"textbox","id":"sh/hcrmhk7y","slide":10,"text":"wasm-mutateと探索アルゴリズム","textPreview":"wasm-mutateと探索アルゴリズム","textChars":20,"textLines":1,"bbox":[370,463,814,52]}
+{"kind":"shape","id":"sh/wbi5ofqd","slide":10,"bbox":[72,525,1136,1]}
+{"kind":"textbox","id":"sh/yx8j2x8r","slide":10,"text":"評価対象","textPreview":"評価対象","textChars":4,"textLines":1,"bbox":[88,541,274,52]}
+{"kind":"textbox","id":"sh/zyhkv2pc","slide":10,"text":"VirusTotal、MINOS","textPreview":"VirusTotal、MINOS","textChars":16,"textLines":1,"bbox":[370,541,814,52]}
+{"kind":"textbox","id":"sh/kzq147qx","slide":10,"text":"出典：Computers & Security, S0167404823002067／数値は原論文確認後に追記","textPreview":"出典：Computers & Security, S0167404823002067／数値は原論文確認後に追記","textChars":55,"textLines":1,"bbox":[72,610,1090,40]}
+{"kind":"notes","id":"nt/da1s9l","slide":10,"text":"提供資料：30枚構成（貼り付けたテキスト.txt）。計画・仮説・進捗は提供資料に基づく。［ ］は差し替え欄。\n添付資料が示す出典：https://www.sciencedirect.com/science/article/pii/S0167404823002067"}
+{"kind":"slide","id":"sl/ee5zsm","slide":11,"title":"wasm-mutateの役割","textShapes":10}
+{"kind":"textbox","id":"sh/pgruts7u","slide":11,"text":"wasm-mutateの役割","textPreview":"wasm-mutateの役割","textChars":14,"textLines":1,"bbox":[72,48,1136,74]}
+{"kind":"shape","id":"sh/2dgbidoj","slide":11,"bbox":[72,135,60,4]}
+{"kind":"textbox","id":"sh/nepcrip4","slide":11,"text":"異なる形のWasmを生成し、変異条件を管理する","textPreview":"異なる形のWasmを生成し、変異条件を管理する","textChars":23,"textLines":1,"bbox":[72,166,1120,76]}
+{"kind":"textbox","id":"sh/0bytg36d","slide":11,"text":"11","textPreview":"11","textChars":2,"textLines":1,"bbox":[1150,656,60,30]}
+{"kind":"shape","id":"sh/1c7up87y","slide":11,"bbox":[72,288,362.67,270]}
+{"kind":"textbox","id":"sh/e9gbeto7","slide":11,"text":"入力","textPreview":"入力","textChars":2,"textLines":1,"bbox":[98,316,310.67,74]}
+{"kind":"textbox","id":"sh/fapcnyps","slide":11,"text":"元Wasm\n乱数seed","textPreview":"元Wasm | 乱数seed","textChars":12,"textLines":2,"bbox":[98,400,310.67,130]}
+{"kind":"shape","id":"sh/k72ds76h","slide":11,"bbox":[458.67,288,362.67,270]}
+{"kind":"textbox","id":"sh/l8bu1c72","slide":11,"text":"変異","textPreview":"変異","textChars":2,"textLines":1,"bbox":[484.67,316,310.67,74]}
+{"kind":"textbox","id":"sh/t4reh0na","slide":11,"text":"wasm-tools内の変異器\n意味保存オプション","textPreview":"wasm-tools内の変異器 | 意味保存オプション","textChars":25,"textLines":2,"bbox":[484.67,400,310.67,130]}
+{"kind":"shape","id":"sh/s3id8v6p","slide":11,"bbox":[845.33,288,362.67,270]}
+{"kind":"textbox","id":"sh/7i9wfq54","slide":11,"text":"出力","textPreview":"出力","textChars":2,"textLines":1,"bbox":[871.33,316,310.67,74]}
+{"kind":"textbox","id":"sh/6h0v6loj","slide":11,"text":"変異体\n検証結果・生成履歴","textPreview":"変異体 | 検証結果・生成履歴","textChars":13,"textLines":2,"bbox":[871.33,400,310.67,130]}
+{"kind":"textbox","id":"sh/5g7edg7y","slide":11,"text":"出典：https://github.com/bytecodealliance/wasm-tools","textPreview":"出典：https://github.com/bytecodealliance/wasm-tools","textChars":49,"textLines":1,"bbox":[72,610,1090,40]}
+{"kind":"notes","id":"nt/ee5zsm","slide":11,"text":"提供資料：30枚構成（貼り付けたテキスト.txt）。計画・仮説・進捗は提供資料に基づく。［ ］は差し替え欄。\n添付資料が示す出典：https://github.com/bytecodealliance/wasm-tools"}
+{"kind":"slide","id":"sl/ie6by9","slide":12,"title":"先行研究と今回の評価範囲","textShapes":9}
+{"kind":"textbox","id":"sh/mt4j2lkr","slide":12,"text":"先行研究と今回の評価範囲","textPreview":"先行研究と今回の評価範囲","textChars":12,"textLines":1,"bbox":[72,48,1136,74]}
+{"kind":"shape","id":"sh/9gv2x0ji","slide":12,"bbox":[72,135,60,4]}
+{"kind":"textbox","id":"sh/8fm14v2x","slide":12,"text":"実製品のブラウザ実行時の反応と、正規化の効果を調べる","textPreview":"実製品のブラウザ実行時の反応と、正規化の効果を調べる","textChars":26,"textLines":1,"bbox":[72,166,1120,76]}
+{"kind":"textbox","id":"sh/vixkza18","slide":12,"text":"12","textPreview":"12","textChars":2,"textLines":1,"bbox":[1150,656,60,30]}
+{"kind":"shape","id":"sh/ah4365k3","slide":12,"bbox":[72,288,362.67,270]}
+{"kind":"textbox","id":"sh/xkf210je","slide":12,"text":"先行研究","textPreview":"先行研究","textChars":4,"textLines":1,"bbox":[98,316,310.67,74]}
+{"kind":"textbox","id":"sh/wj6l8v2t","slide":12,"text":"研究用検知器\nファイルスキャン","textPreview":"研究用検知器 | ファイルスキャン","textChars":15,"textLines":2,"bbox":[98,400,310.67,130]}
+{"kind":"shape","id":"sh/jmxk3a1k","slide":12,"bbox":[458.67,288,362.67,270]}
+{"kind":"textbox","id":"sh/ilo3a5kz","slide":12,"text":"今回の評価","textPreview":"今回の評価","textChars":5,"textLines":1,"bbox":[484.67,316,310.67,74]}
+{"kind":"textbox","id":"sh/s3qxsva1","slide":12,"text":"EDR・アンチウイルス\nブラウザ実行と遅延検知","textPreview":"EDR・アンチウイルス | ブラウザ実行と遅延検知","textChars":23,"textLines":2,"bbox":[484.67,400,310.67,130]}
+{"kind":"shape","id":"sh/d4je10bm","slide":12,"bbox":[845.33,288,362.67,270]}
+{"kind":"textbox","id":"sh/q18vq5sb","slide":12,"text":"防御手法","textPreview":"防御手法","textChars":4,"textLines":1,"bbox":[871.33,316,310.67,74]}
+{"kind":"textbox","id":"sh/r2hwzatg","slide":12,"text":"コード正規化\n検知結果の回復","textPreview":"コード正規化 | 検知結果の回復","textChars":14,"textLines":2,"bbox":[871.33,400,310.67,130]}
+{"kind":"notes","id":"nt/ie6by9","slide":12,"text":"提供資料：30枚構成（貼り付けたテキスト.txt）。計画・仮説・進捗は提供資料に基づく。［ ］は差し替え欄。"}
+{"kind":"slide","id":"sl/86ef50","slide":13,"title":"研究目的","textShapes":5}
+{"kind":"textbox","id":"sh/itc3294n","slide":13,"text":"研究目的","textPreview":"研究目的","textChars":4,"textLines":1,"bbox":[72,48,1136,74]}
+{"kind":"shape","id":"sh/5g3mdony","slide":13,"bbox":[72,135,60,4]}
+{"kind":"textbox","id":"sh/4ful4jmt","slide":13,"text":"変異前後と正規化前後を、同じ条件で比較する","textPreview":"変異前後と正規化前後を、同じ条件で比較する","textChars":21,"textLines":1,"bbox":[72,166,1120,76]}
+{"kind":"textbox","id":"sh/vq147u5w","slide":13,"text":"13","textPreview":"13","textChars":2,"textLines":1,"bbox":[1150,656,60,30]}
+{"kind":"textbox","id":"sh/ups3y94b","slide":13,"text":"検知結果の変化と\n正規化による回復可能性を測定","textPreview":"検知結果の変化と | 正規化による回復可能性を測定","textChars":23,"textLines":2,"bbox":[72,285,1110,145]}
+{"kind":"textbox","id":"sh/hs3m94n2","slide":13,"text":"機能の維持と性能低下を併せて確認する","textPreview":"機能の維持と性能低下を併せて確認する","textChars":18,"textLines":1,"bbox":[72,478,1100,72]}
+{"kind":"notes","id":"nt/86ef50","slide":13,"text":"提供資料：30枚構成（貼り付けたテキスト.txt）。計画・仮説・進捗は提供資料に基づく。［ ］は差し替え欄。"}
+{"kind":"slide","id":"sl/gv1ma6","slide":14,"title":"研究全体の位置付け","textShapes":13}
+{"kind":"textbox","id":"sh/2hgzqlof","slide":14,"text":"研究全体の位置付け","textPreview":"研究全体の位置付け","textChars":9,"textLines":1,"bbox":[72,48,1136,74]}
+{"kind":"shape","id":"sh/pk7i107q","slide":14,"bbox":[72,135,60,4]}
+{"kind":"textbox","id":"sh/4jyhsv65","slide":14,"text":"調査、制御実験、正規化の評価を接続する","textPreview":"調査、制御実験、正規化の評価を接続する","textChars":19,"textLines":1,"bbox":[72,166,1120,76]}
+{"kind":"textbox","id":"sh/fe5gvqpo","slide":14,"text":"14","textPreview":"14","textChars":2,"textLines":1,"bbox":[1150,656,60,30]}
+{"kind":"shape","id":"sh/udwzmlo3","slide":14,"bbox":[72,306,357.33,204]}
+{"kind":"textbox","id":"sh/hgnyxg7u","slide":14,"text":"01","textPreview":"01","textChars":2,"textLines":1,"bbox":[94,326,313.33,40]}
+{"kind":"textbox","id":"sh/gfehob69","slide":14,"text":"Phase 1","textPreview":"Phase 1","textChars":7,"textLines":1,"bbox":[94,372,313.33,64]}
+{"kind":"textbox","id":"sh/za907a5s","slide":14,"text":"検体・難読化手法の調査","textPreview":"検体・難読化手法の調査","textChars":11,"textLines":1,"bbox":[94,445,313.33,60]}
+{"kind":"shape","id":"sh/e90zy5on","slide":14,"bbox":[429.33,383,32,2]}
+{"kind":"shape","id":"sh/8jmlwb2h","slide":14,"bbox":[461.33,306,357.33,204]}
+{"kind":"textbox","id":"sh/9kvm5g3m","slide":14,"text":"02","textPreview":"02","textChars":2,"textLines":1,"bbox":[483.33,326,313.33,40]}
+{"kind":"textbox","id":"sh/mh43ulkb","slide":14,"text":"Phase 2","textPreview":"Phase 2","textChars":7,"textLines":1,"bbox":[483.33,372,313.33,64]}
+{"kind":"textbox","id":"sh/7id43qlw","slide":14,"text":"StarBEDで実製品を評価","textPreview":"StarBEDで実製品を評価","textChars":14,"textLines":1,"bbox":[483.33,445,313.33,60]}
+{"kind":"shape","id":"sh/kvmlsb25","slide":14,"bbox":[818.67,383,32,2]}
+{"kind":"shape","id":"sh/lwvm1g3q","slide":14,"bbox":[850.67,306,357.33,204]}
+{"kind":"textbox","id":"sh/ytk3q14z","slide":14,"text":"03","textPreview":"03","textChars":2,"textLines":1,"bbox":[872.67,326,313.33,40]}
+{"kind":"textbox","id":"sh/zud4z6lk","slide":14,"text":"Phase 3","textPreview":"Phase 3","textChars":7,"textLines":1,"bbox":[872.67,372,313.33,64]}
+{"kind":"textbox","id":"sh/cr2lorm9","slide":14,"text":"コード正規化を評価","textPreview":"コード正規化を評価","textChars":9,"textLines":1,"bbox":[872.67,445,313.33,60]}
+{"kind":"textbox","id":"sh/xsbmxw3u","slide":14,"text":"現在位置：［該当するPhaseを強調］","textPreview":"現在位置：［該当するPhaseを強調］","textChars":19,"textLines":1,"bbox":[72,610,1090,40]}
+{"kind":"notes","id":"nt/gv1ma6","slide":14,"text":"提供資料：30枚構成（貼り付けたテキスト.txt）。計画・仮説・進捗は提供資料に基づく。［ ］は差し替え欄。"}
+{"kind":"slide","id":"sl/eguat6","slide":15,"title":"リサーチクエスチョン","textShapes":11}
+{"kind":"textbox","id":"sh/edgfqhwn","slide":15,"text":"リサーチクエスチョン","textPreview":"リサーチクエスチョン","textChars":10,"textLines":1,"bbox":[72,48,1136,74]}
+{"kind":"shape","id":"sh/1grelcve","slide":15,"bbox":[72,135,60,4]}
+{"kind":"textbox","id":"sh/0fixs7et","slide":15,"text":"観測できる結果に基づいて、四つの問いに答える","textPreview":"観測できる結果に基づいて、四つの問いに答える","textChars":22,"textLines":1,"bbox":[72,166,1120,76]}
+{"kind":"textbox","id":"sh/rqpwf2xc","slide":15,"text":"15","textPreview":"15","textChars":2,"textLines":1,"bbox":[1150,656,60,30]}
+{"kind":"shape","id":"sh/qpgfmxwr","slide":15,"bbox":[72,266,1136,1]}
+{"kind":"textbox","id":"sh/ds7ehcfi","slide":15,"text":"RQ1  構造","textPreview":"RQ1  構造","textChars":7,"textLines":1,"bbox":[88,282,274,52]}
+{"kind":"textbox","id":"sh/sryxo7ex","slide":15,"text":"wasm-mutateはどのような構造変化を生成するか","textPreview":"wasm-mutateはどのような構造変化を生成するか","textChars":27,"textLines":1,"bbox":[370,282,814,52]}
+{"kind":"shape","id":"sh/bmtgr6dg","slide":15,"bbox":[72,344,1136,1]}
+{"kind":"textbox","id":"sh/al0fy1wv","slide":15,"text":"RQ2  機能・性能","textPreview":"RQ2  機能・性能","textChars":10,"textLines":1,"bbox":[88,360,274,52]}
+{"kind":"textbox","id":"sh/gnel0bmh","slide":15,"text":"変異後も機能と性能は維持されるか","textPreview":"変異後も機能と性能は維持されるか","textChars":16,"textLines":1,"bbox":[370,360,814,52]}
+{"kind":"shape","id":"sh/honm9wn2","slide":15,"bbox":[72,422,1136,1]}
+{"kind":"textbox","id":"sh/ulw3y14b","slide":15,"text":"RQ3  検知","textPreview":"RQ3  検知","textChars":7,"textLines":1,"bbox":[88,438,274,52]}
+{"kind":"textbox","id":"sh/fm54765w","slide":15,"text":"変異によってEDR・AVの検知結果は変化するか","textPreview":"変異によってEDR・AVの検知結果は変化するか","textChars":23,"textLines":1,"bbox":[370,438,814,52]}
+{"kind":"shape","id":"sh/szelwrml","slide":15,"bbox":[72,500,1136,1]}
+{"kind":"textbox","id":"sh/t0nm5wn6","slide":15,"text":"RQ4  正規化","textPreview":"RQ4  正規化","textChars":8,"textLines":1,"bbox":[88,516,274,52]}
+{"kind":"textbox","id":"sh/6xc3uh4f","slide":15,"text":"正規化によって検知結果を回復できるか","textPreview":"正規化によって検知結果を回復できるか","textChars":18,"textLines":1,"bbox":[370,516,814,52]}
+{"kind":"notes","id":"nt/eguat6","slide":15,"text":"提供資料：30枚構成（貼り付けたテキスト.txt）。計画・仮説・進捗は提供資料に基づく。［ ］は差し替え欄。"}
+{"kind":"slide","id":"sl/ovsm69","slide":16,"title":"検証前の仮説","textShapes":11}
+{"kind":"textbox","id":"sh/yhkripk3","slide":16,"text":"検証前の仮説","textPreview":"検証前の仮説","textChars":6,"textLines":1,"bbox":[72,48,1136,74]}
+{"kind":"shape","id":"sh/lkbqdkje","slide":16,"bbox":[72,135,60,4]}
+{"kind":"textbox","id":"sh/0j29kz2t","slide":16,"text":"以下は実験で検証する仮説","textPreview":"以下は実験で検証する仮説","textChars":12,"textLines":1,"bbox":[72,166,1120,76]}
+{"kind":"textbox","id":"sh/bet87a1c","slide":16,"text":"16","textPreview":"16","textChars":2,"textLines":1,"bbox":[1150,656,60,30]}
+{"kind":"shape","id":"sh/qt0re5kr","slide":16,"bbox":[72,266,1136,1]}
+{"kind":"textbox","id":"sh/dgbq9kji","slide":16,"text":"H1","textPreview":"H1","textChars":2,"textLines":1,"bbox":[88,282,274,52]}
+{"kind":"textbox","id":"sh/cf29gf2x","slide":16,"text":"変異回数が増えるとバイナリ類似度が低下する","textPreview":"変異回数が増えるとバイナリ類似度が低下する","textChars":21,"textLines":1,"bbox":[370,282,814,52]}
+{"kind":"shape","id":"sh/vadsje1g","slide":16,"bbox":[72,344,1136,1]}
+{"kind":"textbox","id":"sh/a94rq9kv","slide":16,"text":"H2","textPreview":"H2","textChars":2,"textLines":1,"bbox":[88,360,274,52]}
+{"kind":"textbox","id":"sh/c3u5sryp","slide":16,"text":"一部の変異体は機能を維持したまま検知を回避する","textPreview":"一部の変異体は機能を維持したまま検知を回避する","textChars":23,"textLines":1,"bbox":[370,360,814,52]}
+{"kind":"shape","id":"sh/x4n61wfu","slide":16,"bbox":[72,422,1136,1]}
+{"kind":"textbox","id":"sh/ahcnqhgj","slide":16,"text":"H3","textPreview":"H3","textChars":2,"textLines":1,"bbox":[88,438,274,52]}
+{"kind":"textbox","id":"sh/bilozmx4","slide":16,"text":"動的・意味ベース検知は変異の影響を受けにくい","textPreview":"動的・意味ベース検知は変異の影響を受けにくい","textChars":22,"textLines":1,"bbox":[370,438,814,52]}
+{"kind":"shape","id":"sh/ofu5oryd","slide":16,"bbox":[72,500,1136,1]}
+{"kind":"textbox","id":"sh/pg36xwfy","slide":16,"text":"H4","textPreview":"H4","textChars":2,"textLines":1,"bbox":[88,516,274,52]}
+{"kind":"textbox","id":"sh/2dcnmhg7","slide":16,"text":"正規化で元Wasmに近い特徴を回復できる","textPreview":"正規化で元Wasmに近い特徴を回復できる","textChars":20,"textLines":1,"bbox":[370,516,814,52]}
+{"kind":"notes","id":"nt/ovsm69","slide":16,"text":"提供資料：30枚構成（貼り付けたテキスト.txt）。計画・仮説・進捗は提供資料に基づく。［ ］は差し替え欄。"}
+{"kind":"slide","id":"sl/q1gwb1","slide":17,"title":"評価パイプライン","textShapes":16}
+{"kind":"textbox","id":"sh/18jqxkfe","slide":17,"text":"評価パイプライン","textPreview":"評価パイプライン","textChars":8,"textLines":1,"bbox":[72,48,1136,74]}
+{"kind":"shape","id":"sh/el8r2pgn","slide":17,"bbox":[72,135,60,4]}
+{"kind":"textbox","id":"sh/f6h8vux8","slide":17,"text":"生成から判定までの履歴をrun_idで結び付ける","textPreview":"生成から判定までの履歴をrun_idで結び付ける","textChars":24,"textLines":1,"bbox":[72,166,1120,76]}
+{"kind":"textbox","id":"sh/sjq90fyx","slide":17,"text":"17","textPreview":"17","textChars":2,"textLines":1,"bbox":[1150,656,60,30]}
+{"kind":"shape","id":"sh/tkzqtkfi","slide":17,"bbox":[72,279,260,204]}
+{"kind":"textbox","id":"sh/6h87y5gr","slide":17,"text":"01","textPreview":"01","textChars":2,"textLines":1,"bbox":[94,299,216,40]}
+{"kind":"textbox","id":"sh/rih8raxc","slide":17,"text":"生成","textPreview":"生成","textChars":2,"textLines":1,"bbox":[94,345,216,64]}
+{"kind":"textbox","id":"sh/cfu9czy1","slide":17,"text":"元Wasm・変異体","textPreview":"元Wasm・変異体","textChars":9,"textLines":1,"bbox":[94,418,216,60]}
+{"kind":"shape","id":"sh/xg3a54fm","slide":17,"bbox":[332,356,32,2]}
+{"kind":"shape","id":"sh/9gzup0ru","slide":17,"bbox":[364,279,260,204]}
+{"kind":"textbox","id":"sh/8fqdwva9","slide":17,"text":"02","textPreview":"02","textChars":2,"textLines":1,"bbox":[386,299,216,40]}
+{"kind":"textbox","id":"sh/nehcnq9o","slide":17,"text":"検証","textPreview":"検証","textChars":2,"textLines":1,"bbox":[386,345,216,64]}
+{"kind":"textbox","id":"sh/md8vu5sj","slide":17,"text":"妥当性・意味保存","textPreview":"妥当性・意味保存","textChars":8,"textLines":1,"bbox":[386,418,216,60]}
+{"kind":"shape","id":"sh/lczul0ry","slide":17,"bbox":[624,356,32,2]}
+{"kind":"shape","id":"sh/0bqdsvad","slide":17,"bbox":[656,279,260,204]}
+{"kind":"textbox","id":"sh/zahcjq9s","slide":17,"text":"03","textPreview":"03","textChars":2,"textLines":1,"bbox":[678,299,216,40]}
+{"kind":"textbox","id":"sh/y9ovqls7","slide":17,"text":"実行","textPreview":"実行","textChars":2,"textLines":1,"bbox":[678,345,216,64]}
+{"kind":"textbox","id":"sh/58jexkr2","slide":17,"text":"ブラウザで実行","textPreview":"ブラウザで実行","textChars":7,"textLines":1,"bbox":[678,418,216,60]}
+{"kind":"shape","id":"sh/k7ad4fah","slide":17,"bbox":[916,356,32,2]}
+{"kind":"shape","id":"sh/4bix03yt","slide":17,"bbox":[948,279,260,204]}
+{"kind":"textbox","id":"sh/5cretoze","slide":17,"text":"04","textPreview":"04","textChars":2,"textLines":1,"bbox":[970,299,216,40]}
+{"kind":"textbox","id":"sh/ip0fyt0n","slide":17,"text":"観測","textPreview":"観測","textChars":2,"textLines":1,"bbox":[970,345,216,64]}
+{"kind":"textbox","id":"sh/3q9wryh8","slide":17,"text":"検知・accepted share","textPreview":"検知・accepted share","textChars":17,"textLines":1,"bbox":[970,418,216,60]}
+{"kind":"shape","id":"sh/gnixwjih","slide":17,"bbox":[72,528,1136,58]}
+{"kind":"textbox","id":"sh/horepoz2","slide":17,"text":"正規化した変異体にも、同じ検証・実行・観測を適用","textPreview":"正規化した変異体にも、同じ検証・実行・観測を適用","textChars":24,"textLines":1,"bbox":[98,539,1080,44]}
+{"kind":"notes","id":"nt/q1gwb1","slide":17,"text":"提供資料：30枚構成（貼り付けたテキスト.txt）。計画・仮説・進捗は提供資料に基づく。［ ］は差し替え欄。"}
+{"kind":"slide","id":"sl/hynca0","slide":18,"title":"評価対象の検体","textShapes":8}
+{"kind":"textbox","id":"sh/dcr6lsrq","slide":18,"text":"評価対象の検体","textPreview":"評価対象の検体","textChars":7,"textLines":1,"bbox":[72,48,1136,74]}
+{"kind":"shape","id":"sh/q9gnqdsz","slide":18,"bbox":[72,135,60,4]}
+{"kind":"textbox","id":"sh/ra9ojitk","slide":18,"text":"出所と選定条件を固定し、元検体を識別する","textPreview":"出所と選定条件を固定し、元検体を識別する","textChars":20,"textLines":1,"bbox":[72,166,1120,76]}
+{"kind":"textbox","id":"sh/0fi5wnah","slide":18,"text":"18","textPreview":"18","textChars":2,"textLines":1,"bbox":[1150,656,60,30]}
+{"kind":"shape","id":"sh/1gr6psr2","slide":18,"bbox":[72,288,556,270]}
+{"kind":"textbox","id":"sh/ed0nuxsb","slide":18,"text":"検体候補","textPreview":"検体候補","textChars":4,"textLines":1,"bbox":[98,316,504,74]}
+{"kind":"textbox","id":"sh/fe9on29w","slide":18,"text":"先行研究の実行可能検体\n管理下の模擬検体","textPreview":"先行研究の実行可能検体 | 管理下の模擬検体","textChars":20,"textLines":2,"bbox":[98,400,504,130]}
+{"kind":"shape","id":"sh/wjy5k3ax","slide":18,"bbox":[652,288,556,270]}
+{"kind":"textbox","id":"sh/hk7md8bi","slide":18,"text":"記録項目","textPreview":"記録項目","textChars":4,"textLines":1,"bbox":[678,316,504,74]}
+{"kind":"textbox","id":"sh/twvyhkzm","slide":18,"text":"SHA-256\nアルゴリズム・コンパイラ\nJSラッパーのバージョン","textPreview":"SHA-256 | アルゴリズム・コンパイラ | JSラッパーのバージョン","textChars":33,"textLines":3,"bbox":[678,400,504,130]}
+{"kind":"textbox","id":"sh/svmx8fy1","slide":18,"text":"第三者の環境に接続しない構成で評価する","textPreview":"第三者の環境に接続しない構成で評価する","textChars":19,"textLines":1,"bbox":[72,610,1090,40]}
+{"kind":"notes","id":"nt/hynca0","slide":18,"text":"提供資料：30枚構成（貼り付けたテキスト.txt）。計画・仮説・進捗は提供資料に基づく。［ ］は差し替え欄。"}
+{"kind":"slide","id":"sl/d9tqwh","slide":19,"title":"変異体の生成条件","textShapes":11}
+{"kind":"textbox","id":"sh/f6lorups","slide":19,"text":"変異体の生成条件","textPreview":"変異体の生成条件","textChars":8,"textLines":1,"bbox":[72,48,1136,74]}
+{"kind":"shape","id":"sh/g7e5kzqx","slide":19,"bbox":[72,135,60,4]}
+{"kind":"textbox","id":"sh/h8n6t47i","slide":19,"text":"再生成に必要なパラメータと失敗を記録する","textPreview":"再生成に必要なパラメータと失敗を記録する","textChars":20,"textLines":1,"bbox":[72,166,1120,76]}
+{"kind":"textbox","id":"sh/29w7m983","slide":19,"text":"19","textPreview":"19","textChars":2,"textLines":1,"bbox":[1150,656,60,30]}
+{"kind":"shape","id":"sh/3a5ovepo","slide":19,"bbox":[72,266,1136,1]}
+{"kind":"textbox","id":"sh/4vepojq9","slide":19,"text":"生成規模","textPreview":"生成規模","textChars":4,"textLines":1,"bbox":[88,282,274,52]}
+{"kind":"textbox","id":"sh/pwn6xo7u","slide":19,"text":"元検体数［ ］  変異体数［ ］  変異回数［ ］","textPreview":"元検体数［ ］  変異体数［ ］  変異回数［ ］","textChars":25,"textLines":1,"bbox":[370,282,814,52]}
+{"kind":"shape","id":"sh/qxw7q9of","slide":19,"bbox":[72,344,1136,1]}
+{"kind":"textbox","id":"sh/ry5ozepk","slide":19,"text":"変異条件","textPreview":"変異条件","textChars":4,"textLines":1,"bbox":[88,360,274,52]}
+{"kind":"textbox","id":"sh/red47qd8","slide":19,"text":"seed［ ］  意味保存［有・無］  探索条件［ ］","textPreview":"seed［ ］  意味保存［有・無］  探索条件［ ］","textChars":27,"textLines":1,"bbox":[370,360,814,52]}
+{"kind":"shape","id":"sh/6dknelwn","slide":19,"bbox":[72,422,1136,1]}
+{"kind":"textbox","id":"sh/tgvm9gvy","slide":19,"text":"失敗の扱い","textPreview":"失敗の扱い","textChars":5,"textLines":1,"bbox":[88,438,274,52]}
+{"kind":"textbox","id":"sh/sfm5gved","slide":19,"text":"生成失敗・検証失敗を記録して分母を明示","textPreview":"生成失敗・検証失敗を記録して分母を明示","textChars":19,"textLines":1,"bbox":[370,438,814,52]}
+{"kind":"shape","id":"sh/jqt436dw","slide":19,"bbox":[72,500,1136,1]}
+{"kind":"textbox","id":"sh/ipkna1wb","slide":19,"text":"識別情報","textPreview":"識別情報","textChars":4,"textLines":1,"bbox":[88,516,274,52]}
+{"kind":"textbox","id":"sh/5sbm5gv2","slide":19,"text":"元検体ID、変異体ID、SHA-256の対応を保存","textPreview":"元検体ID、変異体ID、SHA-256の対応を保存","textChars":25,"textLines":1,"bbox":[370,516,814,52]}
+{"kind":"notes","id":"nt/d9tqwh","slide":19,"text":"提供資料：30枚構成（貼り付けたテキスト.txt）。計画・仮説・進捗は提供資料に基づく。［ ］は差し替え欄。"}
+{"kind":"slide","id":"sl/5oxxsh","slide":20,"title":"コード正規化モジュール","textShapes":8}
+{"kind":"textbox","id":"sh/ze14bi9k","slide":20,"text":"コード正規化モジュール","textPreview":"コード正規化モジュール","textChars":11,"textLines":1,"bbox":[72,48,1136,74]}
+{"kind":"shape","id":"sh/0za54nq5","slide":20,"bbox":[72,135,60,4]}
+{"kind":"textbox","id":"sh/10jmdsrq","slide":20,"text":"異なる表現を共通表現へ近づける","textPreview":"異なる表現を共通表現へ近づける","textChars":15,"textLines":1,"bbox":[72,166,1120,76]}
+{"kind":"textbox","id":"sh/q98nyd8n","slide":20,"text":"20","textPreview":"20","textChars":2,"textLines":1,"bbox":[1150,656,60,30]}
+{"kind":"shape","id":"sh/rah47y98","slide":20,"bbox":[72,288,556,270]}
+{"kind":"textbox","id":"sh/cbq503qt","slide":20,"text":"正規化前","textPreview":"正規化前","textChars":4,"textLines":1,"bbox":[98,316,504,74]}
+{"kind":"textbox","id":"sh/dczm98re","slide":20,"text":"［WATの命令列を挿入］\n変異による表現の違い","textPreview":"［WATの命令列を挿入］ | 変異による表現の違い","textChars":23,"textLines":2,"bbox":[98,400,504,130]}
+{"kind":"shape","id":"sh/25o3utsr","slide":20,"bbox":[652,288,556,270]}
+{"kind":"textbox","id":"sh/36x43y9c","slide":20,"text":"正規化後","textPreview":"正規化後","textChars":4,"textLines":1,"bbox":[678,316,504,74]}
+{"kind":"textbox","id":"sh/julgz294","slide":20,"text":"［正規化後のWATを挿入］\n整理した命令列","textPreview":"［正規化後のWATを挿入］ | 整理した命令列","textChars":21,"textLines":2,"bbox":[678,400,504,130]}
+{"kind":"textbox","id":"sh/i9sfqxsj","slide":20,"text":"対象候補：不要命令・到達不能コード・定数式／実装済み範囲［ ］","textPreview":"対象候補：不要命令・到達不能コード・定数式／実装済み範囲［ ］","textChars":31,"textLines":1,"bbox":[72,610,1090,40]}
+{"kind":"notes","id":"nt/5oxxsh","slide":20,"text":"提供資料：30枚構成（貼り付けたテキスト.txt）。計画・仮説・進捗は提供資料に基づく。［ ］は差し替え欄。"}
+{"kind":"slide","id":"sl/kt413b","slide":21,"title":"実験群","textShapes":11}
+{"kind":"textbox","id":"sh/ds7ul03y","slide":21,"text":"実験群","textPreview":"実験群","textChars":3,"textLines":1,"bbox":[72,48,1136,74]}
+{"kind":"shape","id":"sh/q5gbq547","slide":21,"bbox":[72,135,60,4]}
+{"kind":"textbox","id":"sh/bqpcjqls","slide":21,"text":"難読化と正規化の効果を切り分ける","textPreview":"難読化と正規化の効果を切り分ける","textChars":16,"textLines":1,"bbox":[72,166,1120,76]}
+{"kind":"textbox","id":"sh/o3ytovmh","slide":21,"text":"21","textPreview":"21","textChars":2,"textLines":1,"bbox":[1150,656,60,30]}
+{"kind":"shape","id":"sh/p47uh032","slide":21,"bbox":[72,266,1136,1]}
+{"kind":"textbox","id":"sh/21gbml4b","slide":21,"text":"A  基準","textPreview":"A  基準","textChars":5,"textLines":1,"bbox":[88,282,274,52]}
+{"kind":"textbox","id":"sh/32pcfqlw","slide":21,"text":"元Wasm","textPreview":"元Wasm","textChars":5,"textLines":1,"bbox":[370,282,814,52]}
+{"kind":"shape","id":"sh/8zid0f2l","slide":21,"bbox":[72,344,1136,1]}
+{"kind":"textbox","id":"sh/90butk36","slide":21,"text":"B・C  変異","textPreview":"B・C  変異","textChars":7,"textLines":1,"bbox":[88,360,274,52]}
+{"kind":"textbox","id":"sh/hsfqlwfi","slide":21,"text":"B：ランダム生成  C：検知回避を探索","textPreview":"B：ランダム生成  C：検知回避を探索","textChars":19,"textLines":1,"bbox":[370,360,814,52]}
+{"kind":"shape","id":"sh/gr69crex","slide":21,"bbox":[72,422,1136,1]}
+{"kind":"textbox","id":"sh/vqd8jmxc","slide":21,"text":"D  正規化","textPreview":"D  正規化","textChars":6,"textLines":1,"bbox":[88,438,274,52]}
+{"kind":"textbox","id":"sh/up4rahgr","slide":21,"text":"変異体を正規化したもの","textPreview":"変異体を正規化したもの","textChars":11,"textLines":1,"bbox":[370,438,814,52]}
+{"kind":"shape","id":"sh/t4vqhcf6","slide":21,"bbox":[72,500,1136,1]}
+{"kind":"textbox","id":"sh/83m987yl","slide":21,"text":"E  良性","textPreview":"E  良性","textChars":5,"textLines":1,"bbox":[88,516,274,52]}
+{"kind":"textbox","id":"sh/72d8f2xg","slide":21,"text":"良性Wasmによる誤検知の確認","textPreview":"良性Wasmによる誤検知の確認","textChars":15,"textLines":1,"bbox":[370,516,814,52]}
+{"kind":"notes","id":"nt/kt413b","slide":21,"text":"提供資料：30枚構成（貼り付けたテキスト.txt）。計画・仮説・進捗は提供資料に基づく。［ ］は差し替え欄。"}
+{"kind":"slide","id":"sl/k8c1ac","slide":22,"title":"StarBEDを使用する理由","textShapes":10}
+{"kind":"textbox","id":"sh/7ixs3adk","slide":22,"text":"StarBEDを使用する理由","textPreview":"StarBEDを使用する理由","textChars":14,"textLines":1,"bbox":[72,48,1136,74]}
+{"kind":"shape","id":"sh/8j6twfup","slide":22,"bbox":[72,135,60,4]}
+{"kind":"textbox","id":"sh/9kza50va","slide":22,"text":"隔離と再構築を前提に、通信とホストを観測する","textPreview":"隔離と再構築を前提に、通信とホストを観測する","textChars":22,"textLines":1,"bbox":[72,166,1120,76]}
+{"kind":"textbox","id":"sh/ul8by5cv","slide":22,"text":"22","textPreview":"22","textChars":2,"textLines":1,"bbox":[1150,656,60,30]}
+{"kind":"shape","id":"sh/vmhs7adg","slide":22,"bbox":[72,288,362.67,270]}
+{"kind":"textbox","id":"sh/wnqt0fu1","slide":22,"text":"分離","textPreview":"分離","textChars":2,"textLines":1,"bbox":[98,316,310.67,74]}
+{"kind":"textbox","id":"sh/hozu9kvm","slide":22,"text":"管理系と実験系\n外部への影響を抑制","textPreview":"管理系と実験系 | 外部への影響を抑制","textChars":17,"textLines":2,"bbox":[98,400,310.67,130]}
+{"kind":"shape","id":"sh/ap4rmlcr","slide":22,"bbox":[458.67,288,362.67,270]}
+{"kind":"textbox","id":"sh/bqdsvqdc","slide":22,"text":"再構築","textPreview":"再構築","textChars":3,"textLines":1,"bbox":[484.67,316,310.67,74]}
+{"kind":"textbox","id":"sh/fux8nadg","slide":22,"text":"KVMによる環境復元\n条件と時刻の統一","textPreview":"KVMによる環境復元 | 条件と時刻の統一","textChars":19,"textLines":2,"bbox":[484.67,400,310.67,130]}
+{"kind":"shape","id":"sh/eto7e5cv","slide":22,"bbox":[845.33,288,362.67,270]}
+{"kind":"textbox","id":"sh/1gzqpkvm","slide":22,"text":"観測","textPreview":"観測","textChars":2,"textLines":1,"bbox":[871.33,316,310.67,74]}
+{"kind":"textbox","id":"sh/gf6pgfu1","slide":22,"text":"パケット\nホストイベント","textPreview":"パケット | ホストイベント","textChars":12,"textLines":2,"bbox":[871.33,400,310.67,130]}
+{"kind":"textbox","id":"sh/7qx8jqdk","slide":22,"text":"出典：StarBED設備概要（添付資料のURL参照）","textPreview":"出典：StarBED設備概要（添付資料のURL参照）","textChars":26,"textLines":1,"bbox":[72,610,1090,40]}
+{"kind":"notes","id":"nt/k8c1ac","slide":22,"text":"提供資料：30枚構成（貼り付けたテキスト.txt）。計画・仮説・進捗は提供資料に基づく。［ ］は差し替え欄。\n添付資料が示す出典：https://starbed.nict.go.jp/archives/starbed4/en/equipment/index.html"}
+{"kind":"slide","id":"sl/hqtozc","slide":23,"title":"物理・仮想構成案","textShapes":11}
+{"kind":"textbox","id":"sh/1wv6tgfu","slide":23,"text":"物理・仮想構成案","textPreview":"物理・仮想構成案","textChars":8,"textLines":1,"bbox":[72,48,1136,74]}
+{"kind":"shape","id":"sh/et4nilgj","slide":23,"bbox":[72,135,60,4]}
+{"kind":"textbox","id":"sh/fud4r6x4","slide":23,"text":"X087の1物理ノード上にKVM/libvirt環境を構築する","textPreview":"X087の1物理ノード上にKVM/libvirt環境を構築する","textChars":31,"textLines":1,"bbox":[72,166,1120,76]}
+{"kind":"textbox","id":"sh/oz65ovyl","slide":23,"text":"23","textPreview":"23","textChars":2,"textLines":1,"bbox":[1150,656,60,30]}
+{"kind":"shape","id":"sh/p0f6x0f6","slide":23,"bbox":[72,272,1136,308]}
+{"kind":"textbox","id":"sh/2x4nmlgf","slide":23,"text":"X087  /  KVM・libvirt","textPreview":"X087  /  KVM・libvirt","textChars":20,"textLines":1,"bbox":[98,290,900,46]}
+{"kind":"shape","id":"sh/3yxovqx0","slide":23,"bbox":[98,369,340,140]}
+{"kind":"textbox","id":"sh/cn65svyh","slide":23,"text":"VLAN 3305","textPreview":"VLAN 3305","textChars":9,"textLines":1,"bbox":[122,387,292,45]}
+{"kind":"textbox","id":"sh/dof610f2","slide":23,"text":"Web配信","textPreview":"Web配信","textChars":5,"textLines":1,"bbox":[122,449,292,42]}
+{"kind":"shape","id":"sh/l0ve1gjq","slide":23,"bbox":[466,369,340,140]}
+{"kind":"textbox","id":"sh/0zmx8bil","slide":23,"text":"VLAN 3306","textPreview":"VLAN 3306","textChars":9,"textLines":1,"bbox":[490,387,292,45]}
+{"kind":"textbox","id":"sh/zytwz610","slide":23,"text":"マイニング","textPreview":"マイニング","textChars":5,"textLines":1,"bbox":[490,449,292,42]}
+{"kind":"shape","id":"sh/ydkf6l0f","slide":23,"bbox":[834,369,340,140]}
+{"kind":"textbox","id":"sh/94vy50j2","slide":23,"text":"VLAN 3307","textPreview":"VLAN 3307","textChars":9,"textLines":1,"bbox":[858,387,292,45]}
+{"kind":"textbox","id":"sh/83mxcvih","slide":23,"text":"VM管理・観測","textPreview":"VM管理・観測","textChars":7,"textLines":1,"bbox":[858,449,292,42]}
+{"kind":"textbox","id":"sh/n2dg3q1w","slide":23,"text":"bus4.0：施設管理用／EXP_IF：実験用25GbE／設計案として要確認","textPreview":"bus4.0：施設管理用／EXP_IF：実験用25GbE／設計案として要確認","textChars":38,"textLines":1,"bbox":[72,610,1090,40]}
+{"kind":"notes","id":"nt/hqtozc","slide":23,"text":"提供資料：30枚構成（貼り付けたテキスト.txt）。計画・仮説・進捗は提供資料に基づく。［ ］は差し替え欄。"}
+{"kind":"slide","id":"sl/bwzhbf","slide":24,"title":"VM間の通信経路案","textShapes":10}
+{"kind":"textbox","id":"sh/1wfytkv6","slide":24,"text":"VM間の通信経路案","textPreview":"VM間の通信経路案","textChars":9,"textLines":1,"bbox":[72,48,1136,74]}
+{"kind":"shape","id":"sh/e9ozipcf","slide":24,"bbox":[72,135,60,4]}
+{"kind":"textbox","id":"sh/zaxgrad0","slide":24,"text":"実験通信と管理・観測通信を論理的に分離する","textPreview":"実験通信と管理・観測通信を論理的に分離する","textChars":21,"textLines":1,"bbox":[72,166,1120,76]}
+{"kind":"textbox","id":"sh/ozqhozuh","slide":24,"text":"24","textPreview":"24","textChars":2,"textLines":1,"bbox":[1150,656,60,30]}
+{"kind":"shape","id":"sh/90zyx4v2","slide":24,"bbox":[72,266,1136,1]}
+{"kind":"textbox","id":"sh/mxozmpcr","slide":24,"text":"Web配信  3305","textPreview":"Web配信  3305","textChars":11,"textLines":1,"bbox":[88,282,274,52]}
+{"kind":"textbox","id":"sh/nyxgvudc","slide":24,"text":"10.33.5.10  から  被害者10.33.5.20  ／ TCP 7676","textPreview":"10.33.5.10  から  被害者10.33.5.20  ／ TCP 7676","textChars":41,"textLines":1,"bbox":[370,282,814,52]}
+{"kind":"shape","id":"sh/w3qhszut","slide":24,"bbox":[72,344,1136,1]}
+{"kind":"textbox","id":"sh/x4zy14ve","slide":24,"text":"計算通信  3306","textPreview":"計算通信  3306","textChars":10,"textLines":1,"bbox":[88,360,274,52]}
+{"kind":"textbox","id":"sh/donihkve","slide":24,"text":"被害者10.33.6.20  と  プール10.33.6.10 ／ TCP 8892","textPreview":"被害者10.33.6.20  と  プール10.33.6.10 ／ TCP 8892","textChars":42,"textLines":1,"bbox":[370,360,814,52]}
+{"kind":"shape","id":"sh/cne1ofet","slide":24,"bbox":[72,422,1136,1]}
+{"kind":"textbox","id":"sh/b250fud8","slide":24,"text":"観測  3307","textPreview":"観測  3307","textChars":8,"textLines":1,"bbox":[88,438,274,52]}
+{"kind":"textbox","id":"sh/q1wjmpwn","slide":24,"text":"被害者10.33.7.20  と  観測VM10.33.7.40 ／ TCP 5986","textPreview":"被害者10.33.7.20  と  観測VM10.33.7.40 ／ TCP 5986","textChars":43,"textLines":1,"bbox":[370,438,814,52]}
+{"kind":"textbox","id":"sh/ls7il4va","slide":24,"text":"同一ホスト内：Linux bridgeでL2転送／ポートと経路は設計案","textPreview":"同一ホスト内：Linux bridgeでL2転送／ポートと経路は設計案","textChars":35,"textLines":1,"bbox":[72,610,1090,40]}
+{"kind":"notes","id":"nt/bwzhbf","slide":24,"text":"提供資料：30枚構成（貼り付けたテキスト.txt）。計画・仮説・進捗は提供資料に基づく。［ ］は差し替え欄。"}
+{"kind":"slide","id":"sl/khbx3u","slide":25,"title":"EDR・アンチウイルスの評価条件","textShapes":9}
+{"kind":"textbox","id":"sh/xgz2ds3u","slide":25,"text":"EDR・アンチウイルスの評価条件","textPreview":"EDR・アンチウイルスの評価条件","textChars":16,"textLines":1,"bbox":[72,48,1136,74]}
+{"kind":"shape","id":"sh/at832d43","slide":25,"bbox":[72,135,60,4]}
+{"kind":"textbox","id":"sh/behkbi5o","slide":25,"text":"検知に影響する設定を実験時点で保存する","textPreview":"検知に影響する設定を実験時点で保存する","textChars":19,"textLines":1,"bbox":[72,166,1120,76]}
+{"kind":"textbox","id":"sh/or6l03md","slide":25,"text":"25","textPreview":"25","textChars":2,"textLines":1,"bbox":[1150,656,60,30]}
+{"kind":"shape","id":"sh/psf298ny","slide":25,"bbox":[72,288,362.67,270]}
+{"kind":"textbox","id":"sh/2pojyd47","slide":25,"text":"製品","textPreview":"製品","textChars":2,"textLines":1,"bbox":[98,316,310.67,74]}
+{"kind":"textbox","id":"sh/nqxk7i5s","slide":25,"text":"製品・エージェント\nエンジン・シグネチャ\n［名称・バージョン］","textPreview":"製品・エージェント | エンジン・シグネチャ | ［名称・バージョン］","textChars":31,"textLines":3,"bbox":[98,400,310.67,130]}
+{"kind":"shape","id":"sh/gn61w3m1","slide":25,"bbox":[458.67,288,362.67,270]}
+{"kind":"textbox","id":"sh/1of258nm","slide":25,"text":"端末","textPreview":"端末","textChars":2,"textLines":1,"bbox":[484.67,316,310.67,74]}
+{"kind":"textbox","id":"sh/xozedo3y","slide":25,"text":"OSビルド\nブラウザ\n［名称・バージョン］","textPreview":"OSビルド | ブラウザ | ［名称・バージョン］","textChars":21,"textLines":3,"bbox":[484.67,400,310.67,130]}
+{"kind":"shape","id":"sh/cn6xkjmd","slide":25,"bbox":[845.33,288,362.67,270]}
+{"kind":"textbox","id":"sh/bmxwbels","slide":25,"text":"保護・接続","textPreview":"保護・接続","textChars":5,"textLines":1,"bbox":[871.33,316,310.67,74]}
+{"kind":"textbox","id":"sh/alofi947","slide":25,"text":"リアルタイム・クラウド\nProxy・外部通信\n［設定とポリシー］","textPreview":"リアルタイム・クラウド | Proxy・外部通信 | ［設定とポリシー］","textChars":32,"textLines":3,"bbox":[871.33,400,310.67,130]}
+{"kind":"notes","id":"nt/khbx3u","slide":25,"text":"提供資料：30枚構成（貼り付けたテキスト.txt）。計画・仮説・進捗は提供資料に基づく。［ ］は差し替え欄。"}
+{"kind":"slide","id":"sl/dp23ae","slide":26,"title":"観測するイベント","textShapes":9}
+{"kind":"textbox","id":"sh/1o7etkvq","slide":26,"text":"観測するイベント","textPreview":"観測するイベント","textChars":8,"textLines":1,"bbox":[72,48,1136,74]}
+{"kind":"shape","id":"sh/elgvi5wf","slide":26,"bbox":[72,135,60,4]}
+{"kind":"textbox","id":"sh/zmpwrad0","slide":26,"text":"製品アラートと実行の証拠を同じrun_idで集約する","textPreview":"製品アラートと実行の証拠を同じrun_idで集約する","textChars":26,"textLines":1,"bbox":[72,166,1120,76]}
+{"kind":"textbox","id":"sh/cjydgve9","slide":26,"text":"26","textPreview":"26","textChars":2,"textLines":1,"bbox":[1150,656,60,30]}
+{"kind":"shape","id":"sh/dk7ep0vu","slide":26,"bbox":[72,288,362.67,270]}
+{"kind":"textbox","id":"sh/qhwve5w3","slide":26,"text":"端末","textPreview":"端末","textChars":2,"textLines":1,"bbox":[98,316,310.67,74]}
+{"kind":"textbox","id":"sh/ri5wnqdo","slide":26,"text":"EDR・AVの検知と遮断\nWindows Event Log\nSysmon","textPreview":"EDR・AVの検知と遮断 | Windows Event Log | Sysmon","textChars":37,"textLines":3,"bbox":[98,400,310.67,130]}
+{"kind":"shape","id":"sh/4vedcved","slide":26,"bbox":[458.67,288,362.67,270]}
+{"kind":"textbox","id":"sh/pgnel0vi","slide":26,"text":"サービス","textPreview":"サービス","textChars":4,"textLines":1,"bbox":[484.67,316,310.67,74]}
+{"kind":"textbox","id":"sh/hsn6tsv6","slide":26,"text":"HTTP配信\nWebSocket接続\naccepted / rejected","textPreview":"HTTP配信 | WebSocket接続 | accepted / rejected","textChars":38,"textLines":3,"bbox":[484.67,400,310.67,130]}
+{"kind":"shape","id":"sh/wrep0nul","slide":26,"bbox":[845.33,288,362.67,270]}
+{"kind":"textbox","id":"sh/vq5oridg","slide":26,"text":"ホスト","textPreview":"ホスト","textChars":3,"textLines":1,"bbox":[871.33,316,310.67,74]}
+{"kind":"textbox","id":"sh/upw7ydcv","slide":26,"text":"pcap\n開始・終了時刻\nrun_id","textPreview":"pcap | 開始・終了時刻 | run_id","textChars":19,"textLines":3,"bbox":[871.33,400,310.67,130]}
+{"kind":"notes","id":"nt/dp23ae","slide":26,"text":"提供資料：30枚構成（貼り付けたテキスト.txt）。計画・仮説・進捗は提供資料に基づく。［ ］は差し替え欄。"}
+{"kind":"slide","id":"sl/gizxnu","slide":27,"title":"判定基準","textShapes":12}
+{"kind":"textbox","id":"sh/3qhgfed0","slide":27,"text":"判定基準","textPreview":"判定基準","textChars":4,"textLines":1,"bbox":[72,48,1136,74]}
+{"kind":"shape","id":"sh/orqx8jel","slide":27,"bbox":[72,135,60,4]}
+{"kind":"textbox","id":"sh/psjyhov6","slide":27,"text":"実行成功と防御製品の反応を別々に判定する","textPreview":"実行成功と防御製品の反応を別々に判定する","textChars":20,"textLines":1,"bbox":[72,166,1120,76]}
+{"kind":"textbox","id":"sh/qtszatwr","slide":27,"text":"27","textPreview":"27","textChars":2,"textLines":1,"bbox":[1150,656,60,30]}
+{"kind":"shape","id":"sh/be1gjydc","slide":27,"bbox":[72,266,1136,1]}
+{"kind":"textbox","id":"sh/cfahcjex","slide":27,"text":"完全回避","textPreview":"完全回避","textChars":4,"textLines":1,"bbox":[88,282,274,52]}
+{"kind":"textbox","id":"sh/dgjylovi","slide":27,"text":"accepted shareあり、警告・遮断なし","textPreview":"accepted shareあり、警告・遮断なし","textChars":24,"textLines":1,"bbox":[370,282,814,52]}
+{"kind":"shape","id":"sh/yhszetw3","slide":27,"bbox":[72,344,1136,1]}
+{"kind":"textbox","id":"sh/zi1gnyd8","slide":27,"text":"部分回避","textPreview":"部分回避","textChars":4,"textLines":1,"bbox":[88,360,274,52]}
+{"kind":"textbox","id":"sh/ja5kj6t0","slide":27,"text":"警告あり、実行は継続","textPreview":"警告あり、実行は継続","textChars":10,"textLines":1,"bbox":[370,360,814,52]}
+{"kind":"shape","id":"sh/y9wjalsf","slide":27,"bbox":[72,422,1136,1]}
+{"kind":"textbox","id":"sh/lc72lgbq","slide":27,"text":"防御成功","textPreview":"防御成功","textChars":4,"textLines":1,"bbox":[88,438,274,52]}
+{"kind":"textbox","id":"sh/kby1cba5","slide":27,"text":"隔離・削除・通信遮断","textPreview":"隔離・削除・通信遮断","textChars":10,"textLines":1,"bbox":[370,438,814,52]}
+{"kind":"shape","id":"sh/bm5kf6to","slide":27,"bbox":[72,500,1136,1]}
+{"kind":"textbox","id":"sh/alwj61c3","slide":27,"text":"機能失敗・遅延","textPreview":"機能失敗・遅延","textChars":7,"textLines":1,"bbox":[88,516,274,52]}
+{"kind":"textbox","id":"sh/x8n2hgbu","slide":27,"text":"shareなし／終了後に警告を確認","textPreview":"shareなし／終了後に警告を確認","textChars":17,"textLines":1,"bbox":[370,516,814,52]}
+{"kind":"textbox","id":"sh/w7e18bu9","slide":27,"text":"実行：1000秒（計画値）／終了後の観測時間：［ ］秒","textPreview":"実行：1000秒（計画値）／終了後の観測時間：［ ］秒","textChars":27,"textLines":1,"bbox":[72,610,1090,40]}
+{"kind":"notes","id":"nt/gizxnu","slide":27,"text":"提供資料：30枚構成（貼り付けたテキスト.txt）。計画・仮説・進捗は提供資料に基づく。［ ］は差し替え欄。"}
+{"kind":"slide","id":"sl/tstgsi","slide":28,"title":"評価指標と再現性","textShapes":10}
+{"kind":"textbox","id":"sh/q5w7ud8v","slide":28,"text":"評価指標と再現性","textPreview":"評価指標と再現性","textChars":8,"textLines":1,"bbox":[72,48,1136,74]}
+{"kind":"shape","id":"sh/d8nq5srm","slide":28,"bbox":[72,135,60,4]}
+{"kind":"textbox","id":"sh/c7epwnq1","slide":28,"text":"検知・機能・性能・構造を同じ条件で比較する","textPreview":"検知・機能・性能・構造を同じ条件で比較する","textChars":21,"textLines":1,"bbox":[72,166,1120,76]}
+{"kind":"textbox","id":"sh/3i5ozy9k","slide":28,"text":"28","textPreview":"28","textChars":2,"textLines":1,"bbox":[1150,656,60,30]}
+{"kind":"shape","id":"sh/2hc7qt8z","slide":28,"bbox":[72,288,362.67,270]}
+{"kind":"textbox","id":"sh/p4n618ra","slide":28,"text":"検知","textPreview":"検知","textChars":2,"textLines":1,"bbox":[98,316,310.67,74]}
+{"kind":"textbox","id":"sh/4jeps3qp","slide":28,"text":"検知率・遮断率\n正規化による回復率","textPreview":"検知率・遮断率 | 正規化による回復率","textChars":17,"textLines":2,"bbox":[98,400,310.67,130]}
+{"kind":"shape","id":"sh/felovy98","slide":28,"bbox":[458.67,288,362.67,270]}
+{"kind":"textbox","id":"sh/udc7mt8n","slide":28,"text":"実行","textPreview":"実行","textChars":2,"textLines":1,"bbox":[484.67,316,310.67,74]}
+{"kind":"textbox","id":"sh/gvi9g36l","slide":28,"text":"accepted share率\nhashes/s・実行時間","textPreview":"accepted share率 | hashes/s・実行時間","textChars":29,"textLines":2,"bbox":[484.67,400,310.67,130]}
+{"kind":"shape","id":"sh/1wra98n6","slide":28,"bbox":[845.33,288,362.67,270]}
+{"kind":"textbox","id":"sh/et0retof","slide":28,"text":"構造","textPreview":"構造","textChars":2,"textLines":1,"bbox":[871.33,316,310.67,74]}
+{"kind":"textbox","id":"sh/fu987y50","slide":28,"text":"バイナリサイズ\n命令列・CFG・類似度","textPreview":"バイナリサイズ | 命令列・CFG・類似度","textChars":19,"textLines":2,"bbox":[871.33,400,310.67,130]}
+{"kind":"textbox","id":"sh/sri9c36p","slide":28,"text":"seed・設定・ログ・VMイメージを保存／順序をランダム化して反復","textPreview":"seed・設定・ログ・VMイメージを保存／順序をランダム化して反復","textChars":33,"textLines":1,"bbox":[72,610,1090,40]}
+{"kind":"notes","id":"nt/tstgsi","slide":28,"text":"提供資料：30枚構成（貼り付けたテキスト.txt）。計画・仮説・進捗は提供資料に基づく。［ ］は差し替え欄。"}
+{"kind":"slide","id":"sl/zpjako","slide":29,"title":"現在地と残る課題","textShapes":12}
+{"kind":"textbox","id":"sh/lcjutsju","slide":29,"text":"現在地と残る課題","textPreview":"現在地と残る課題","textChars":8,"textLines":1,"bbox":[72,48,1136,74]}
+{"kind":"shape","id":"sh/y98bidk3","slide":29,"bbox":[72,135,60,4]}
+{"kind":"textbox","id":"sh/za1crilo","slide":29,"text":"進捗とマイルストーンを更新して使う","textPreview":"進捗とマイルストーンを更新して使う","textChars":17,"textLines":1,"bbox":[72,166,1120,76]}
+{"kind":"textbox","id":"sh/8zadon25","slide":29,"text":"29","textPreview":"29","textChars":2,"textLines":1,"bbox":[1150,656,60,30]}
+{"kind":"shape","id":"sh/90juxsjq","slide":29,"bbox":[72,266,1136,1]}
+{"kind":"textbox","id":"sh/mdsbmxkz","slide":29,"text":"完了","textPreview":"完了","textChars":2,"textLines":1,"bbox":[88,282,274,52]}
+{"kind":"textbox","id":"sh/7y1cvi1k","slide":29,"text":"先行研究調査","textPreview":"先行研究調査","textChars":6,"textLines":1,"bbox":[370,282,814,52]}
+{"kind":"shape","id":"sh/o3qtc321","slide":29,"bbox":[72,344,1136,1]}
+{"kind":"textbox","id":"sh/p4zul83m","slide":29,"text":"進行中","textPreview":"進行中","textChars":3,"textLines":1,"bbox":[88,360,274,52]}
+{"kind":"textbox","id":"sh/ho3epwzy","slide":29,"text":"Wasm正規化モジュール","textPreview":"Wasm正規化モジュール","textChars":12,"textLines":1,"bbox":[370,360,814,52]}
+{"kind":"shape","id":"sh/gnuxgrid","slide":29,"bbox":[72,422,1136,1]}
+{"kind":"textbox","id":"sh/fmlwnmh8","slide":29,"text":"設計済み","textPreview":"設計済み","textChars":4,"textLines":1,"bbox":[88,438,274,52]}
+{"kind":"textbox","id":"sh/ulsfeh0n","slide":29,"text":"KVM・VLAN・IP構成","textPreview":"KVM・VLAN・IP構成","textChars":13,"textLines":1,"bbox":[370,438,814,52]}
+{"kind":"shape","id":"sh/pc3ytgza","slide":29,"bbox":[72,500,1136,1]}
+{"kind":"textbox","id":"sh/4buxkbyp","slide":29,"text":"未完了・未決定","textPreview":"未完了・未決定","textChars":7,"textLines":1,"bbox":[88,516,274,52]}
+{"kind":"textbox","id":"sh/3qlgr6h4","slide":29,"text":"製品選定、観測VM、自動実験、EDR外部接続","textPreview":"製品選定、観測VM、自動実験、EDR外部接続","textChars":22,"textLines":1,"bbox":[370,516,814,52]}
+{"kind":"textbox","id":"sh/2pcfi10j","slide":29,"text":"添付資料の進捗を記載／次のマイルストーン：［内容］［期限］","textPreview":"添付資料の進捗を記載／次のマイルストーン：［内容］［期限］","textChars":29,"textLines":1,"bbox":[72,610,1090,40]}
+{"kind":"notes","id":"nt/zpjako","slide":29,"text":"提供資料：30枚構成（貼り付けたテキスト.txt）。計画・仮説・進捗は提供資料に基づく。［ ］は差し替え欄。"}
+{"kind":"slide","id":"sl/tig92a","slide":30,"title":"NICT・StarBED担当者への相談","textShapes":9}
+{"kind":"textbox","id":"sh/0vqlkn61","slide":30,"text":"NICT・StarBED担当者への相談","textPreview":"NICT・StarBED担当者への相談","textChars":19,"textLines":1,"bbox":[72,48,1136,74]}
+{"kind":"shape","id":"sh/fuh4ri5g","slide":30,"bbox":[72,135,60,4]}
+{"kind":"textbox","id":"sh/et83idov","slide":30,"text":"構成・接続・観測・復元の運用条件を確認する","textPreview":"構成・接続・観測・復元の運用条件を確認する","textChars":21,"textLines":1,"bbox":[72,166,1120,76]}
+{"kind":"textbox","id":"sh/pkjmxsni","slide":30,"text":"30","textPreview":"30","textChars":2,"textLines":1,"bbox":[1150,656,60,30]}
+{"kind":"shape","id":"sh/ozalon6x","slide":30,"bbox":[72,288,362.67,270]}
+{"kind":"textbox","id":"sh/ny14v25s","slide":30,"text":"構成","textPreview":"構成","textChars":2,"textLines":1,"bbox":[98,316,310.67,74]}
+{"kind":"textbox","id":"sh/2xs3mxo7","slide":30,"text":"物理VLANの利用要否\nbus4.0と管理系の分離\n観測VMの配置","textPreview":"物理VLANの利用要否 | bus4.0と管理系の分離 | 観測VMの配置","textChars":33,"textLines":3,"bbox":[98,400,310.67,130]}
+{"kind":"shape","id":"sh/5oz2l8ne","slide":30,"bbox":[458.67,288,362.67,270]}
+{"kind":"textbox","id":"sh/436lc36t","slide":30,"text":"接続・観測","textPreview":"接続・観測","textChars":5,"textLines":1,"bbox":[484.67,316,310.67,74]}
+{"kind":"textbox","id":"sh/ihgvax8j","slide":30,"text":"EDRのProxy利用\nログとpcapの時刻同期","textPreview":"EDRのProxy利用 | ログとpcapの時刻同期","textChars":24,"textLines":2,"bbox":[484.67,400,310.67,130]}
+{"kind":"shape","id":"sh/329wj294","slide":30,"bbox":[845.33,288,362.67,270]}
+{"kind":"textbox","id":"sh/43ixc7qp","slide":30,"text":"運用","textPreview":"運用","textChars":2,"textLines":1,"bbox":[871.33,316,310.67,74]}
+{"kind":"textbox","id":"sh/54relsru","slide":30,"text":"実験後のVM復元\n避けるべき構成・通信","textPreview":"実験後のVM復元 | 避けるべき構成・通信","textChars":19,"textLines":2,"bbox":[871.33,400,310.67,130]}
+{"kind":"notes","id":"nt/tig92a","slide":30,"text":"提供資料：30枚構成（貼り付けたテキスト.txt）。計画・仮説・進捗は提供資料に基づく。［ ］は差し替え欄。"}
