@@ -9,3 +9,12 @@
 
 # Bundled runtime dependencies are supplied by Codex on each PC.
 node_modules/
+
+# Generated presentations, previews, and validation outputs.
+/outputs/
+/.build-slides/*
+!/.build-slides/build.mjs
+/artifacts/*/output/
+/artifacts/*/.chart-data-*/
+/artifacts/*/build/*
+!/artifacts/*/build/*.mjs
