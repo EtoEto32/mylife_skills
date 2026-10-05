@@ -1,0 +1,195 @@
+{"kind":"deck","id":"pr/vc4b4b","name":"Deck"}
+{"kind":"layout","layoutId":"9db45467-8edc-4dee-863f-dc27a6f4db8f","name":"Master","type":"master"}
+{"kind":"layout","layoutId":"d0bfee88-58aa-4f9d-a2b0-aaea7427538f","name":"Title Slide","type":"title"}
+{"kind":"slide","id":"sl/bc8in3","slide":1,"title":"1","textShapes":5}
+{"kind":"textbox","id":"sh/7ulsnm9g","slide":1,"name":"shape-1","text":"1","textPreview":"1","textChars":1,"textLines":1,"bbox":[1150,658,58,26]}
+{"kind":"shape","id":"sh/8vu9wrql","slide":1,"name":"shape-2","bbox":[72,87,56,5]}
+{"kind":"textbox","id":"sh/twnapcr6","slide":1,"name":"shape-3","text":"難読化されたWebAssembly\nクリプトジャッキングの\n検知耐性評価","textPreview":"難読化されたWebAssembly | クリプトジャッキングの | 検知耐性評価","textChars":36,"textLines":3,"bbox":[72,142,1136,252]}
+{"kind":"textbox","id":"sh/uxwryh8r","slide":1,"name":"shape-4","text":"wasm-mutateによるバイナリ多様化とコード正規化","textPreview":"wasm-mutateによるバイナリ多様化とコード正規化","textChars":28,"textLines":1,"bbox":[72,430,1136,62]}
+{"kind":"shape","id":"sh/vy5srm9c","slide":1,"name":"shape-5","bbox":[72,570,1136,2]}
+{"kind":"textbox","id":"sh/gze90rqx","slide":1,"name":"shape-6","text":"氏名 / 所属","textPreview":"氏名 / 所属","textChars":7,"textLines":1,"bbox":[72,601,800,40]}
+{"kind":"textbox","id":"sh/h0natwri","slide":1,"name":"shape-7","text":"YYYY.MM.DD","textPreview":"YYYY.MM.DD","textChars":10,"textLines":1,"bbox":[950,601,258,40]}
+{"kind":"notes","id":"nt/bc8in3","slide":1,"text":"レイアウト：表紙。タイトルは2～3行、副題は1行。氏名・所属・日付を更新してください。添付の研究テーマを見本として使用しています。\nテンプレートの見本文字です。必要なスライドを複製し、内容を差し替えてください。図形・文字は編集可能です。"}
+{"kind":"slide","id":"sl/stqnav","slide":2,"title":"2","textShapes":4}
+{"kind":"textbox","id":"sh/jqpgj61c","slide":2,"name":"shape-8","text":"2","textPreview":"2","textChars":1,"textLines":1,"bbox":[1150,658,58,26]}
+{"kind":"textbox","id":"sh/kryxcb2x","slide":2,"name":"shape-9","text":"01","textPreview":"01","textChars":2,"textLines":1,"bbox":[72,110,250,120]}
+{"kind":"textbox","id":"sh/ls7ylgj2","slide":2,"name":"shape-10","text":"章タイトル","textPreview":"章タイトル","textChars":5,"textLines":1,"bbox":[72,286,1136,95]}
+{"kind":"textbox","id":"sh/a1wf61kf","slide":2,"name":"shape-11","text":"この章で伝えることを、ひと言で","textPreview":"この章で伝えることを、ひと言で","textChars":15,"textLines":1,"bbox":[72,406,1136,55]}
+{"kind":"shape","id":"sh/b25gf610","slide":2,"name":"shape-12","bbox":[72,558,1136,2]}
+{"kind":"notes","id":"nt/stqnav","slide":2,"text":"レイアウト：章扉。話題が切り替わる位置に配置します。章番号、章タイトル、章で扱う内容を差し替えます。\nテンプレートの見本文字です。必要なスライドを複製し、内容を差し替えてください。図形・文字は編集可能です。"}
+{"kind":"slide","id":"sl/quzbw5","slide":3,"title":"結論をひと言で","textShapes":7}
+{"kind":"textbox","id":"sh/c3a98nad","slide":3,"name":"shape-13","text":"結論をひと言で","textPreview":"結論をひと言で","textChars":7,"textLines":1,"bbox":[72,52,1136,66]}
+{"kind":"shape","id":"sh/r21sfits","slide":3,"name":"shape-14","bbox":[72,134,46,4]}
+{"kind":"textbox","id":"sh/qhsr6dsn","slide":3,"name":"shape-15","text":"3","textPreview":"3","textChars":1,"textLines":1,"bbox":[1150,658,58,26]}
+{"kind":"shape","id":"sh/pgjqdsb2","slide":3,"name":"shape-16","bbox":[72,208,1136,224]}
+{"kind":"textbox","id":"sh/4fa94nah","slide":3,"name":"shape-17","text":"最も伝えたいメッセージを\nここに記入","textPreview":"最も伝えたいメッセージを | ここに記入","textChars":18,"textLines":2,"bbox":[112,244,1056,143]}
+{"kind":"textbox","id":"sh/3e18bitw","slide":3,"name":"shape-18","text":"根拠 01","textPreview":"根拠 01","textChars":5,"textLines":1,"bbox":[72,481,520,40]}
+{"kind":"textbox","id":"sh/2d8r2dsb","slide":3,"name":"shape-19","text":"結論を支える事実を短く","textPreview":"結論を支える事実を短く","textChars":11,"textLines":1,"bbox":[72,530,520,55]}
+{"kind":"textbox","id":"sh/hczq98bq","slide":3,"name":"shape-20","text":"根拠 02","textPreview":"根拠 02","textChars":5,"textLines":1,"bbox":[672,481,536,40]}
+{"kind":"textbox","id":"sh/gbq9g3a5","slide":3,"name":"shape-21","text":"比較・観察結果をひと言で","textPreview":"比較・観察結果をひと言で","textChars":12,"textLines":1,"bbox":[672,530,536,55]}
+{"kind":"notes","id":"nt/quzbw5","slide":3,"text":"レイアウト：1メッセージ。中央の結論は2行まで。根拠は左右に短く分けて配置します。\nテンプレートの見本文字です。必要なスライドを複製し、内容を差し替えてください。図形・文字は編集可能です。"}
+{"kind":"slide","id":"sl/tyqbeo","slide":4,"title":"重要なポイント","textShapes":11}
+{"kind":"textbox","id":"sh/ix8j2tkf","slide":4,"name":"shape-22","text":"重要なポイント","textPreview":"重要なポイント","textChars":7,"textLines":1,"bbox":[72,52,1136,66]}
+{"kind":"shape","id":"sh/p0z2d8j6","slide":4,"name":"shape-23","bbox":[72,134,46,4]}
+{"kind":"textbox","id":"sh/4zq1432l","slide":4,"name":"shape-24","text":"4","textPreview":"4","textChars":1,"textLines":1,"bbox":[1150,658,58,26]}
+{"kind":"shape","id":"sh/r2hkfi1c","slide":4,"name":"shape-25","bbox":[72,206,360,367]}
+{"kind":"textbox","id":"sh/q18j6dkr","slide":4,"name":"shape-26","text":"01","textPreview":"01","textChars":2,"textLines":1,"bbox":[100,231,304,36]}
+{"kind":"textbox","id":"sh/doz2hsj2","slide":4,"name":"shape-27","text":"ポイント 1","textPreview":"ポイント 1","textChars":6,"textLines":1,"bbox":[100,289,304,56]}
+{"kind":"textbox","id":"sh/c3q18n2h","slide":4,"name":"shape-28","text":"短い説明を\n2行以内で記入","textPreview":"短い説明を | 2行以内で記入","textChars":13,"textLines":2,"bbox":[100,370,304,177]}
+{"kind":"shape","id":"sh/76x03els","slide":4,"name":"shape-29","bbox":[460,206,360,367]}
+{"kind":"textbox","id":"sh/654ju9k7","slide":4,"name":"shape-30","text":"02","textPreview":"02","textChars":2,"textLines":1,"bbox":[488,231,304,36]}
+{"kind":"textbox","id":"sh/or2hcbip","slide":4,"name":"shape-31","text":"ポイント 2","textPreview":"ポイント 2","textChars":6,"textLines":1,"bbox":[488,289,304,56]}
+{"kind":"textbox","id":"sh/psbilgju","slide":4,"name":"shape-32","text":"短い説明を\n2行以内で記入","textPreview":"短い説明を | 2行以内で記入","textChars":13,"textLines":2,"bbox":[488,370,304,177]}
+{"kind":"shape","id":"sh/2pkza10j","slide":4,"name":"shape-33","bbox":[848,206,360,367]}
+{"kind":"textbox","id":"sh/nqt0j614","slide":4,"name":"shape-34","text":"03","textPreview":"03","textChars":2,"textLines":1,"bbox":[876,231,304,36]}
+{"kind":"textbox","id":"sh/cvm1gbil","slide":4,"name":"shape-35","text":"ポイント 3","textPreview":"ポイント 3","textChars":6,"textLines":1,"bbox":[876,289,304,56]}
+{"kind":"textbox","id":"sh/xwvipgj6","slide":4,"name":"shape-36","text":"短い説明を\n2行以内で記入","textPreview":"短い説明を | 2行以内で記入","textChars":13,"textLines":2,"bbox":[876,370,304,177]}
+{"kind":"notes","id":"nt/tyqbeo","slide":4,"text":"レイアウト：3枚のカード。各見出しは短く、説明は2行以内にします。カードの幅と余白を揃えてください。\nテンプレートの見本文字です。必要なスライドを複製し、内容を差し替えてください。図形・文字は編集可能です。"}
+{"kind":"slide","id":"sl/w84jiu","slide":5,"title":"実施の流れ","textShapes":14}
+{"kind":"textbox","id":"sh/nm983apk","slide":5,"name":"shape-37","text":"実施の流れ","textPreview":"実施の流れ","textChars":5,"textLines":1,"bbox":[72,52,1136,66]}
+{"kind":"shape","id":"sh/oni9wv65","slide":5,"name":"shape-38","bbox":[72,134,46,4]}
+{"kind":"textbox","id":"sh/9obq507a","slide":5,"name":"shape-39","text":"5","textPreview":"5","textChars":1,"textLines":1,"bbox":[1150,658,58,26]}
+{"kind":"textbox","id":"sh/apkry5ov","slide":5,"name":"shape-40","text":"01","textPreview":"01","textChars":2,"textLines":1,"bbox":[72,215,240,45]}
+{"kind":"shape","id":"sh/bqt87apg","slide":5,"name":"shape-41","bbox":[72,282,266,116]}
+{"kind":"textbox","id":"sh/wb290f61","slide":5,"name":"shape-42","text":"準備","textPreview":"準備","textChars":2,"textLines":1,"bbox":[92,304,226,66]}
+{"kind":"textbox","id":"sh/xcbq9k7m","slide":5,"name":"shape-43","text":"対象・条件を定義","textPreview":"対象・条件を定義","textChars":8,"textLines":1,"bbox":[72,441,266,78]}
+{"kind":"textbox","id":"sh/qtg7ml8r","slide":5,"name":"shape-44","text":"02","textPreview":"02","textChars":2,"textLines":1,"bbox":[362,215,240,45]}
+{"kind":"shape","id":"sh/rup8vqpc","slide":5,"name":"shape-45","bbox":[362,282,266,116]}
+{"kind":"textbox","id":"sh/jato7ytk","slide":5,"name":"shape-46","text":"実施","textPreview":"実施","textChars":2,"textLines":1,"bbox":[382,304,226,66]}
+{"kind":"textbox","id":"sh/i9k7etcz","slide":5,"name":"shape-47","text":"手順に沿って実行","textPreview":"手順に沿って実行","textChars":8,"textLines":1,"bbox":[362,441,266,78]}
+{"kind":"textbox","id":"sh/5wv698bq","slide":5,"name":"shape-48","text":"03","textPreview":"03","textChars":2,"textLines":1,"bbox":[652,215,240,45]}
+{"kind":"shape","id":"sh/4bmpg3u5","slide":5,"name":"shape-49","bbox":[652,282,266,116]}
+{"kind":"textbox","id":"sh/v6to3ydo","slide":5,"name":"shape-50","text":"比較","textPreview":"比較","textChars":2,"textLines":1,"bbox":[672,304,226,66]}
+{"kind":"textbox","id":"sh/a5knatc3","slide":5,"name":"shape-51","text":"結果を並べて確認","textPreview":"結果を並べて確認","textChars":8,"textLines":1,"bbox":[652,441,266,78]}
+{"kind":"textbox","id":"sh/x8b658ve","slide":5,"name":"shape-52","text":"04","textPreview":"04","textChars":2,"textLines":1,"bbox":[942,215,240,45]}
+{"kind":"shape","id":"sh/w72pc3ut","slide":5,"name":"shape-53","bbox":[942,282,266,116]}
+{"kind":"textbox","id":"sh/n29ozedc","slide":5,"name":"shape-54","text":"評価","textPreview":"評価","textChars":2,"textLines":1,"bbox":[962,304,226,66]}
+{"kind":"textbox","id":"sh/m10n69cr","slide":5,"name":"shape-55","text":"結論と課題を整理","textPreview":"結論と課題を整理","textChars":8,"textLines":1,"bbox":[942,441,266,78]}
+{"kind":"shape","id":"sh/qd07i9wz","slide":5,"bbox":[0,0,0,0]}
+{"kind":"shape","id":"sh/by98rex4","slide":5,"bbox":[0,0,0,0]}
+{"kind":"shape","id":"sh/czipkjep","slide":5,"bbox":[0,0,0,0]}
+{"kind":"notes","id":"nt/w84jiu","slide":5,"text":"レイアウト：4段階のプロセス。研究の実験工程にも使用できます。ノードとコネクタは編集可能です。\nテンプレートの見本文字です。必要なスライドを複製し、内容を差し替えてください。図形・文字は編集可能です。"}
+{"kind":"slide","id":"sl/2rfodm","slide":6,"title":"2つの条件を比較","textShapes":17}
+{"kind":"textbox","id":"sh/yt4bm5sz","slide":6,"name":"shape-56","text":"2つの条件を比較","textPreview":"2つの条件を比較","textChars":8,"textLines":1,"bbox":[72,52,1136,66]}
+{"kind":"shape","id":"sh/lwvaxkba","slide":6,"name":"shape-57","bbox":[72,134,46,4]}
+{"kind":"textbox","id":"sh/kvmtofap","slide":6,"name":"shape-58","text":"6","textPreview":"6","textChars":1,"textLines":1,"bbox":[1150,658,58,26]}
+{"kind":"shape","id":"sh/7idszutg","slide":6,"name":"shape-59","bbox":[72,206,540,364]}
+{"kind":"shape","id":"sh/6x4bqpsv","slide":6,"name":"shape-60","bbox":[640,206,568,364]}
+{"kind":"textbox","id":"sh/tkfa14bm","slide":6,"name":"shape-61","text":"比較条件 A","textPreview":"比較条件 A","textChars":6,"textLines":1,"bbox":[102,228,480,55]}
+{"kind":"textbox","id":"sh/sj6tsza1","slide":6,"name":"shape-62","text":"比較条件 B","textPreview":"比較条件 B","textChars":6,"textLines":1,"bbox":[670,228,508,55]}
+{"kind":"textbox","id":"sh/fmxc3utc","slide":6,"name":"shape-63","text":"特徴","textPreview":"特徴","textChars":2,"textLines":1,"bbox":[102,318,94,42]}
+{"kind":"textbox","id":"sh/ulobupsr","slide":6,"name":"shape-64","text":"特徴をひと言で","textPreview":"特徴をひと言で","textChars":7,"textLines":1,"bbox":[210,318,355,42]}
+{"kind":"textbox","id":"sh/4769gnyx","slide":6,"name":"shape-65","text":"特徴","textPreview":"特徴","textChars":2,"textLines":1,"bbox":[670,318,94,42]}
+{"kind":"textbox","id":"sh/p8fqpsfi","slide":6,"name":"shape-66","text":"特徴をひと言で","textPreview":"特徴をひと言で","textChars":7,"textLines":1,"bbox":[778,318,383,42]}
+{"kind":"textbox","id":"sh/25oredgr","slide":6,"name":"shape-67","text":"利点","textPreview":"利点","textChars":2,"textLines":1,"bbox":[102,396,94,42]}
+{"kind":"textbox","id":"sh/36x8nixc","slide":6,"name":"shape-68","text":"利点をひと言で","textPreview":"利点をひと言で","textChars":7,"textLines":1,"bbox":[210,396,355,42]}
+{"kind":"textbox","id":"sh/cbq9knyt","slide":6,"name":"shape-69","text":"利点","textPreview":"利点","textChars":2,"textLines":1,"bbox":[670,396,94,42]}
+{"kind":"textbox","id":"sh/dczatsfe","slide":6,"name":"shape-70","text":"利点をひと言で","textPreview":"利点をひと言で","textChars":7,"textLines":1,"bbox":[778,396,383,42]}
+{"kind":"textbox","id":"sh/q9orixgn","slide":6,"name":"shape-71","text":"課題","textPreview":"課題","textChars":2,"textLines":1,"bbox":[102,474,94,42]}
+{"kind":"textbox","id":"sh/bahsrix8","slide":6,"name":"shape-72","text":"課題をひと言で","textPreview":"課題をひと言で","textChars":7,"textLines":1,"bbox":[210,474,355,42]}
+{"kind":"textbox","id":"sh/0zq9o7y5","slide":6,"name":"shape-73","text":"課題","textPreview":"課題","textChars":2,"textLines":1,"bbox":[670,474,94,42]}
+{"kind":"textbox","id":"sh/l0zaxcfa","slide":6,"name":"shape-74","text":"課題をひと言で","textPreview":"課題をひと言で","textChars":7,"textLines":1,"bbox":[778,474,383,42]}
+{"kind":"textbox","id":"sh/9kvil83i","slide":6,"name":"shape-75","text":"比較から分かったことを1文で","textPreview":"比較から分かったことを1文で","textChars":14,"textLines":1,"bbox":[72,596,1136,45]}
+{"kind":"notes","id":"nt/2rfodm","slide":6,"text":"レイアウト：左右の比較。変異前後、正規化前後などに使えます。同じ観点を同じ高さに揃えます。\nテンプレートの見本文字です。必要なスライドを複製し、内容を差し替えてください。図形・文字は編集可能です。"}
+{"kind":"slide","id":"sl/pju9i2","slide":7,"title":"全体構成","textShapes":9}
+{"kind":"textbox","id":"sh/zid8jm1k","slide":7,"name":"shape-76","text":"全体構成","textPreview":"全体構成","textChars":4,"textLines":1,"bbox":[72,52,1136,66]}
+{"kind":"shape","id":"sh/0jmpsri5","slide":7,"name":"shape-77","bbox":[72,134,46,4]}
+{"kind":"textbox","id":"sh/lkvqlwjq","slide":7,"name":"shape-78","text":"7","textPreview":"7","textChars":1,"textLines":1,"bbox":[1150,658,58,26]}
+{"kind":"shape","id":"sh/qt47mh03","slide":7,"name":"shape-79","bbox":[402,196,476,381]}
+{"kind":"textbox","id":"sh/bed8fm1o","slide":7,"name":"shape-80","text":"処理環境","textPreview":"処理環境","textChars":4,"textLines":1,"bbox":[426,212,420,42]}
+{"kind":"shape","id":"sh/cfmpori9","slide":7,"name":"shape-81","bbox":[72,334,266,112]}
+{"kind":"textbox","id":"sh/dgvqhwju","slide":7,"name":"shape-82","text":"入力","textPreview":"入力","textChars":2,"textLines":1,"bbox":[92,357,226,62]}
+{"kind":"shape","id":"sh/a9o7y107","slide":7,"name":"shape-83","bbox":[452,308,376,94]}
+{"kind":"textbox","id":"sh/vax8r6hs","slide":7,"name":"shape-84","text":"処理 1","textPreview":"処理 1","textChars":4,"textLines":1,"bbox":[472,326,336,54]}
+{"kind":"shape","id":"sh/nux4v698","slide":7,"name":"shape-85","bbox":[452,448,376,94]}
+{"kind":"textbox","id":"sh/mton218n","slide":7,"name":"shape-86","text":"処理 2","textPreview":"処理 2","textChars":4,"textLines":1,"bbox":[472,466,336,54]}
+{"kind":"shape","id":"sh/9wfmxgre","slide":7,"name":"shape-87","bbox":[944,334,264,112]}
+{"kind":"textbox","id":"sh/8v654bqt","slide":7,"name":"shape-88","text":"出力","textPreview":"出力","textChars":2,"textLines":1,"bbox":[964,357,224,62]}
+{"kind":"shape","id":"sh/vyh4zq9k","slide":7,"bbox":[0,0,0,0]}
+{"kind":"shape","id":"sh/axon6l8z","slide":7,"bbox":[0,0,0,0]}
+{"kind":"shape","id":"sh/x0zm1g7a","slide":7,"bbox":[0,0,0,0]}
+{"kind":"textbox","id":"sh/wzq58bqp","slide":7,"name":"shape-89","text":"入力対象の説明","textPreview":"入力対象の説明","textChars":7,"textLines":1,"bbox":[72,475,266,55]}
+{"kind":"textbox","id":"sh/j2h43qpg","slide":7,"name":"shape-90","text":"出力結果の説明","textPreview":"出力結果の説明","textChars":7,"textLines":1,"bbox":[944,475,264,55]}
+{"kind":"notes","id":"nt/pju9i2","slide":7,"text":"レイアウト：構成図。左は入力、中央は処理、右は出力。実際の接続条件や境界に合わせて見出し・線を変更してください。\nテンプレートの見本文字です。必要なスライドを複製し、内容を差し替えてください。図形・文字は編集可能です。"}
+{"kind":"slide","id":"sl/levr7v","slide":8,"title":"主要な数値","textShapes":11}
+{"kind":"textbox","id":"sh/03edova9","slide":8,"name":"shape-91","text":"主要な数値","textPreview":"主要な数値","textChars":5,"textLines":1,"bbox":[72,52,1136,66]}
+{"kind":"shape","id":"sh/f25wfq9o","slide":8,"name":"shape-92","bbox":[72,134,46,4]}
+{"kind":"textbox","id":"sh/e1wvmls3","slide":8,"name":"shape-93","text":"8","textPreview":"8","textChars":1,"textLines":1,"bbox":[1150,658,58,26]}
+{"kind":"textbox","id":"sh/d0nedgri","slide":8,"name":"shape-94","text":"指標 1","textPreview":"指標 1","textChars":4,"textLines":1,"bbox":[72,229,360,45]}
+{"kind":"textbox","id":"sh/sfudkbax","slide":8,"name":"shape-95","text":"XX%","textPreview":"XX%","textChars":3,"textLines":1,"bbox":[72,314,360,123]}
+{"kind":"shape","id":"sh/relwb69c","slide":8,"name":"shape-96","bbox":[72,470,360,2]}
+{"kind":"textbox","id":"sh/qdcvi1s7","slide":8,"name":"shape-97","text":"対象・期間・条件を記入","textPreview":"対象・期間・条件を記入","textChars":11,"textLines":1,"bbox":[72,502,360,66]}
+{"kind":"textbox","id":"sh/xw7epkr2","slide":8,"name":"shape-98","text":"指標 2","textPreview":"指標 2","textChars":4,"textLines":1,"bbox":[460,229,360,45]}
+{"kind":"textbox","id":"sh/cbyxwfah","slide":8,"name":"shape-99","text":"XX件","textPreview":"XX件","textChars":3,"textLines":1,"bbox":[460,314,360,123]}
+{"kind":"shape","id":"sh/a9svuxs7","slide":8,"name":"shape-100","bbox":[460,470,360,2]}
+{"kind":"textbox","id":"sh/ba1c329s","slide":8,"name":"shape-101","text":"対象・期間・条件を記入","textPreview":"対象・期間・条件を記入","textChars":11,"textLines":1,"bbox":[460,502,360,66]}
+{"kind":"textbox","id":"sh/wbudw7ad","slide":8,"name":"shape-102","text":"指標 3","textPreview":"指標 3","textChars":4,"textLines":1,"bbox":[848,229,360,45]}
+{"kind":"textbox","id":"sh/xc3u5sry","slide":8,"name":"shape-103","text":"XX秒","textPreview":"XX秒","textChars":3,"textLines":1,"bbox":[848,314,360,123]}
+{"kind":"shape","id":"sh/m5svqdsb","slide":8,"name":"shape-104","bbox":[848,470,360,2]}
+{"kind":"textbox","id":"sh/n61czi9w","slide":8,"name":"shape-105","text":"対象・期間・条件を記入","textPreview":"対象・期間・条件を記入","textChars":11,"textLines":1,"bbox":[848,502,360,66]}
+{"kind":"notes","id":"nt/levr7v","slide":8,"text":"レイアウト：KPI。XXは数値用プレースホルダーです。実測値、単位、対象期間を更新してください。結果を捏造せず、未測定なら未測定と記載します。\nテンプレートの見本文字です。必要なスライドを複製し、内容を差し替えてください。図形・文字は編集可能です。"}
+{"kind":"slide","id":"sl/v66qxa","slide":9,"title":"条件別の結果","textShapes":6}
+{"kind":"textbox","id":"sh/gz6t43qd","slide":9,"name":"shape-106","text":"条件別の結果","textPreview":"条件別の結果","textChars":6,"textLines":1,"bbox":[72,52,1136,66]}
+{"kind":"shape","id":"sh/vyxcbi9s","slide":9,"name":"shape-107","bbox":[72,134,46,4]}
+{"kind":"textbox","id":"sh/ux4b2d87","slide":9,"name":"shape-108","text":"9","textPreview":"9","textChars":1,"textLines":1,"bbox":[1150,658,58,26]}
+{"kind":"textbox","id":"sh/twvu98rm","slide":9,"name":"shape-109","text":"サンプル値（実測値ではありません）","textPreview":"サンプル値（実測値ではありません）","textChars":17,"textLines":1,"bbox":[72,178,800,40]}
+{"kind":"shape","id":"sh/7udc7y9w","slide":9,"name":"shape-110","bbox":[880,243,328,330]}
+{"kind":"textbox","id":"sh/6t4byt8b","slide":9,"name":"shape-111","text":"読み取り","textPreview":"読み取り","textChars":4,"textLines":1,"bbox":[908,269,272,50]}
+{"kind":"textbox","id":"sh/lsvu5orq","slide":9,"name":"shape-112","text":"グラフから分かる\nことを短く記入","textPreview":"グラフから分かる | ことを短く記入","textChars":16,"textLines":2,"bbox":[908,356,272,128]}
+{"kind":"textbox","id":"sh/krmtwjq5","slide":9,"name":"shape-113","text":"単位・測定条件・出典を記入","textPreview":"単位・測定条件・出典を記入","textChars":13,"textLines":1,"bbox":[72,604,1136,32]}
+{"kind":"chart","id":"ch/0nm5wjal","slide":9,"name":"","chartType":"bar","bbox":[72,243,740,330]}
+{"kind":"notes","id":"nt/v66qxa","slide":9,"text":"レイアウト：編集可能な棒グラフ。表示値60・40・70は書式確認用の架空データです。実験結果ではありません。PowerPointの「データの編集」からカテゴリ・値を変更します。\nテンプレートの見本文字です。必要なスライドを複製し、内容を差し替えてください。図形・文字は編集可能です。"}
+{"kind":"slide","id":"sl/mp1gbn","slide":10,"title":"今後のスケジュール","textShapes":14}
+{"kind":"textbox","id":"sh/hsze5cbe","slide":10,"name":"shape-114","text":"今後のスケジュール","textPreview":"今後のスケジュール","textChars":9,"textLines":1,"bbox":[72,52,1136,66]}
+{"kind":"shape","id":"sh/up8vaxcn","slide":10,"name":"shape-115","bbox":[72,134,46,4]}
+{"kind":"textbox","id":"sh/fqhw32t8","slide":10,"name":"shape-116","text":"10","textPreview":"10","textChars":2,"textLines":1,"bbox":[1150,658,58,26]}
+{"kind":"shape","id":"sh/4vadg7up","slide":10,"name":"shape-117","bbox":[85,329,1110,2]}
+{"kind":"textbox","id":"sh/pwje9cba","slide":10,"name":"shape-118","text":"期間 1","textPreview":"期間 1","textChars":4,"textLines":1,"bbox":[72,219,266,45]}
+{"kind":"shape","id":"sh/2t8vehcz","slide":10,"name":"shape-119","bbox":[82,319,22,22]}
+{"kind":"textbox","id":"sh/3u1w72tk","slide":10,"name":"shape-120","text":"準備","textPreview":"準備","textChars":2,"textLines":1,"bbox":[72,380,266,62]}
+{"kind":"textbox","id":"sh/kz6d4nul","slide":10,"name":"shape-121","text":"実施内容を\n2行以内で記入","textPreview":"実施内容を | 2行以内で記入","textChars":13,"textLines":2,"bbox":[72,461,266,96]}
+{"kind":"textbox","id":"sh/50fexsv6","slide":10,"name":"shape-122","text":"期間 2","textPreview":"期間 2","textChars":4,"textLines":1,"bbox":[362,219,266,45]}
+{"kind":"shape","id":"sh/5gra9oni","slide":10,"name":"shape-123","bbox":[372,319,22,22]}
+{"kind":"textbox","id":"sh/4fi9gjmx","slide":10,"name":"shape-124","text":"実験","textPreview":"実験","textChars":2,"textLines":1,"bbox":[362,380,266,62]}
+{"kind":"textbox","id":"sh/3e9s7e5s","slide":10,"name":"shape-125","text":"実施内容を\n2行以内で記入","textPreview":"実施内容を | 2行以内で記入","textChars":13,"textLines":2,"bbox":[362,461,266,96]}
+{"kind":"textbox","id":"sh/id0re947","slide":10,"name":"shape-126","text":"期間 3","textPreview":"期間 3","textChars":4,"textLines":1,"bbox":[652,219,266,45]}
+{"kind":"shape","id":"sh/dkbadonu","slide":10,"name":"shape-127","bbox":[662,319,22,22]}
+{"kind":"textbox","id":"sh/sj29kjm9","slide":10,"name":"shape-128","text":"分析","textPreview":"分析","textChars":2,"textLines":1,"bbox":[652,380,266,62]}
+{"kind":"textbox","id":"sh/ritsbe5o","slide":10,"name":"shape-129","text":"実施内容を\n2行以内で記入","textPreview":"実施内容を | 2行以内で記入","textChars":13,"textLines":2,"bbox":[652,461,266,96]}
+{"kind":"textbox","id":"sh/qh0rit43","slide":10,"name":"shape-130","text":"期間 4","textPreview":"期間 4","textChars":4,"textLines":1,"bbox":[942,219,266,45]}
+{"kind":"shape","id":"sh/1obah8nq","slide":10,"name":"shape-131","bbox":[952,319,22,22]}
+{"kind":"textbox","id":"sh/0n29o3m5","slide":10,"name":"shape-132","text":"報告","textPreview":"報告","textChars":2,"textLines":1,"bbox":[942,380,266,62]}
+{"kind":"textbox","id":"sh/k3ul0byt","slide":10,"name":"shape-133","text":"実施内容を\n2行以内で記入","textPreview":"実施内容を | 2行以内で記入","textChars":13,"textLines":2,"bbox":[942,461,266,96]}
+{"kind":"notes","id":"nt/mp1gbn","slide":10,"text":"レイアウト：ロードマップ。月・期間と作業内容を差し替えます。紫は現在または重点期間です。\nテンプレートの見本文字です。必要なスライドを複製し、内容を差し替えてください。図形・文字は編集可能です。"}
+{"kind":"slide","id":"sl/y6gkwf","slide":11,"title":"まとめ・相談事項","textShapes":7}
+{"kind":"textbox","id":"sh/2lsjqx0v","slide":11,"name":"shape-134","text":"まとめ・相談事項","textPreview":"まとめ・相談事項","textChars":8,"textLines":1,"bbox":[72,52,1136,66]}
+{"kind":"shape","id":"sh/po32lczm","slide":11,"name":"shape-135","bbox":[72,134,46,4]}
+{"kind":"textbox","id":"sh/ona1s7i1","slide":11,"name":"shape-136","text":"11","textPreview":"11","textChars":2,"textLines":1,"bbox":[1150,658,58,26]}
+{"kind":"shape","id":"sh/fi10fihk","slide":11,"name":"shape-137","bbox":[72,205,1136,163]}
+{"kind":"textbox","id":"sh/ehsjmd0z","slide":11,"name":"shape-138","text":"今日伝えたい結論を1文で","textPreview":"今日伝えたい結論を1文で","textChars":12,"textLines":1,"bbox":[108,247,1064,80]}
+{"kind":"textbox","id":"sh/1kj2hszq","slide":11,"name":"shape-139","text":"相談事項 1","textPreview":"相談事項 1","textChars":6,"textLines":1,"bbox":[72,424,520,46]}
+{"kind":"textbox","id":"sh/gja1oni5","slide":11,"name":"shape-140","text":"確認したいことを短く記入","textPreview":"確認したいことを短く記入","textChars":12,"textLines":1,"bbox":[72,484,520,72]}
+{"kind":"textbox","id":"sh/ruh0bih8","slide":11,"name":"shape-141","text":"相談事項 2","textPreview":"相談事項 2","textChars":6,"textLines":1,"bbox":[672,424,536,46]}
+{"kind":"textbox","id":"sh/6t8jid03","slide":11,"name":"shape-142","text":"助言が欲しい点を短く記入","textPreview":"助言が欲しい点を短く記入","textChars":12,"textLines":1,"bbox":[672,484,536,72]}
+{"kind":"notes","id":"nt/y6gkwf","slide":11,"text":"レイアウト：まとめ。結論は1文、相談事項は2点程度。最後に次の行動や質問を具体的に示します。\nテンプレートの見本文字です。必要なスライドを複製し、内容を差し替えてください。図形・文字は編集可能です。"}
+{"kind":"slide","id":"sl/87j26r","slide":12,"title":"テンプレートの使い方","textShapes":12}
+{"kind":"textbox","id":"sh/58behwv6","slide":12,"name":"shape-143","text":"テンプレートの使い方","textPreview":"テンプレートの使い方","textChars":10,"textLines":1,"bbox":[72,52,1136,66]}
+{"kind":"shape","id":"sh/i5kvmhcf","slide":12,"name":"shape-144","bbox":[72,134,46,4]}
+{"kind":"textbox","id":"sh/j6twfmd0","slide":12,"name":"shape-145","text":"12","textPreview":"12","textChars":2,"textLines":1,"bbox":[1150,658,58,26]}
+{"kind":"textbox","id":"sh/w3idk7up","slide":12,"name":"shape-146","text":"配色","textPreview":"配色","textChars":2,"textLines":1,"bbox":[72,207,490,45]}
+{"kind":"shape","id":"sh/x4bedcva","slide":12,"name":"shape-147","bbox":[72,283,78,62]}
+{"kind":"textbox","id":"sh/a10vihwj","slide":12,"name":"shape-148","text":"白","textPreview":"白","textChars":1,"textLines":1,"bbox":[72,354,78,38]}
+{"kind":"shape","id":"sh/v29cb2d4","slide":12,"name":"shape-149","bbox":[174,283,78,62]}
+{"kind":"textbox","id":"sh/gzmdwbut","slide":12,"name":"shape-150","text":"本文","textPreview":"本文","textChars":2,"textLines":1,"bbox":[174,354,78,38]}
+{"kind":"shape","id":"sh/h0vepgve","slide":12,"name":"shape-151","bbox":[276,283,78,62]}
+{"kind":"textbox","id":"sh/547ats7a","slide":12,"name":"shape-152","text":"補足","textPreview":"補足","textChars":2,"textLines":1,"bbox":[276,354,78,38]}
+{"kind":"shape","id":"sh/k3y9knqp","slide":12,"name":"shape-153","bbox":[378,283,78,62]}
+{"kind":"textbox","id":"sh/j2psrip4","slide":12,"name":"shape-154","text":"紫","textPreview":"紫","textChars":1,"textLines":1,"bbox":[378,354,78,38]}
+{"kind":"shape","id":"sh/i1grid8j","slide":12,"name":"shape-155","bbox":[480,283,78,62]}
+{"kind":"textbox","id":"sh/x07ap87y","slide":12,"name":"shape-156","text":"淡紫","textPreview":"淡紫","textChars":2,"textLines":1,"bbox":[480,354,78,38]}
+{"kind":"textbox","id":"sh/wze9g3qt","slide":12,"name":"shape-157","text":"余白と文字","textPreview":"余白と文字","textChars":5,"textLines":1,"bbox":[672,207,536,45]}
+{"kind":"textbox","id":"sh/vy5snyp8","slide":12,"name":"shape-158","text":"左右の余白 72 px\n見出し 28.5 pt / 本文 18–21 pt\nフォント Meiryo / 比率 16:9","textPreview":"左右の余白 72 px | 見出し 28.5 pt / 本文 18–21 pt | フォント Meiryo / 比率 16:9","textChars":59,"textLines":3,"bbox":[672,279,536,136]}
+{"kind":"shape","id":"sh/axwret8n","slide":12,"name":"shape-159","bbox":[72,454,1136,2]}
+{"kind":"textbox","id":"sh/1wra1c7i","slide":12,"name":"shape-160","text":"必要なページを複製して、見本文字を差し替え","textPreview":"必要なページを複製して、見本文字を差し替え","textChars":21,"textLines":1,"bbox":[72,496,1136,48]}
+{"kind":"textbox","id":"sh/gvits7qx","slide":12,"name":"shape-161","text":"1枚に1メッセージ。説明は短く、図解は大きく。","textPreview":"1枚に1メッセージ。説明は短く、図解は大きく。","textChars":23,"textLines":1,"bbox":[72,561,1136,47]}
+{"kind":"notes","id":"nt/87j26r","slide":12,"text":"このガイドは発表前に削除してください。必要なスライドを複製し、見本文字を置換します。タイトルや本文を短くし、図解を大きく保ちます。研究テーマの30枚分の本文を作成した資料ではなく、汎用レイアウト集です。\nテンプレートの見本文字です。必要なスライドを複製し、内容を差し替えてください。図形・文字は編集可能です。"}

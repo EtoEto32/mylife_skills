@@ -8,4 +8,4 @@
 /skills/yomiyasu
 
 # Bundled runtime dependencies are supplied by Codex on each PC.
-/.build-slides/node_modules/
+node_modules/
