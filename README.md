@@ -72,7 +72,34 @@ Gitでジャンクションを配布することは想定していません。�
 | slide-figures | `minorun-marp-skill/skills/slide-figures` |
 | yomiyasu | `yomiyasu/skills/yomiyasu` |
 
-`satori` はリポジトリ直下を単一スキルとして登録していません。現在の設定スクリプトの登録対象は、上の5スキルです。
+`satori` はリポジトリ直下を単一スキルとして登録していません。上の5スキルに加え、以下の外部スキルも登録しています。
+
+| 配布元 | Codexでの呼び出し名 | 元のフォルダ |
+| --- | --- | --- |
+| [hideshi/scholarly-agent-skills](https://github.com/hideshi/scholarly-agent-skills) | 日本語版24スキル。翻訳は`academic-paper-translation`、PDF変換は`pdf-paper-ingestion` | `scholarly-agent-skills/skills/ja/<スキル名>` |
+| [AIKONG2024/paper-translate-agent-skill](https://github.com/AIKONG2024/paper-translate-agent-skill) | `pdf-translate` | `paper-translate-agent-skill/pdf-translate` |
+| [Chael-Chael/zotero-translate-skill](https://github.com/Chael-Chael/zotero-translate-skill) | `zotero-translate` | `zotero-translate-skill/skills/zotero-translate` |
+| [toku345/marp-slides](https://github.com/toku345/marp-slides) | `creating-marp-slides` | `marp-slides/.claude/skills/creating-marp-slides` |
+| [softaworks/agent-toolkit](https://github.com/softaworks/agent-toolkit) | `marp-slide` | `agent-toolkit/skills/marp-slide` |
+| [hora-algebra/interactive-slide](https://github.com/hora-algebra/interactive-slide) | `interactive-slide` | `interactive-slide/plugins/interactive-slide/skills/interactive-slide` |
+
+6リポジトリはGitサブモジュールとしてクローンしています。Scholarlyは日本語版のみ、agent-toolkitは指定されたMarpスキルのみを登録し、同名の英語版や無関係なスキルは読み込み先に追加しません。既存5スキルと合わせて34スキルをこのプロジェクトで使う構成です。
+
+設定後の次のターンから利用できます。一覧が更新されない場合は、このプロジェクトで新しいチャットを開いてください。呼び出し例:
+
+```text
+$pdf-paper-ingestion この論文PDFをMarkdownにして
+$academic-paper-translation 原文と日本語訳を段落ごとに並べ、用語集も作って
+$pdf-translate このPDFを日本語に翻訳し、レイアウトを保ったPDFにして
+$zotero-translate Zoteroのこの論文を日本語に翻訳し、日本語版と対訳版を添付して
+$creating-marp-slides この内容からMarp資料を作って
+$marp-slide この資料をtechテーマで整えて
+$interactive-slide この発表原稿から操作できるHTMLスライドを作って
+```
+
+登録先はプロジェクトの`.agents/skills/`です。全プロジェクト共通のユーザースキル領域には追加していません。Windowsでのパス・保存先の扱いはルートの`AGENTS.md`に記載しています。相対参照はジャンクションの見かけの位置ではなく、配布元の実体を基準に解決します。
+
+登録は依存ライブラリのインストールや翻訳実行とは別です。PDF翻訳は各スキルのdoctor/setupや初回実行で専用ランタイムを準備します。Zotero翻訳ではZotero本体と対象の添付PDFが必要で、bridgeの導入・再起動は実際の添付作業時に行います。MarpのPDF/PPTX出力はMarp CLIと対応ブラウザ、interactive-slideの数式・QR・画面検査は対応するNode/Pythonライブラリを使います。APIキーはこの登録作業では設定していません。
 
 ## 新しい共通スキル
 
@@ -90,7 +117,7 @@ description: 何を行うスキルか、どんな依頼で使うか。
 ここに共通の手順を書く。
 ```
 
-自作スキルを `skills/` の実フォルダとして作成した場合は、そのフォルダをGitに追加します。既存5スキルの `skills/` 内のリンクは `.gitignore` で除外しています。
+自作スキルを `skills/` の実フォルダとして作成した場合は、そのフォルダをGitに追加します。外部スキルの `skills/` 内のリンクは `.gitignore` で除外しています。
 
 外部リポジトリから登録対象を増やす場合は、`setup-skills.ps1` の `$sources` にスキル名と実体の相対パスを追加してください。対応する `skills/<スキル名>` のリンクも `.gitignore` に追加します。
 

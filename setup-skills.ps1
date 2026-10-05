@@ -12,6 +12,25 @@ $sources = [ordered]@{
     'slide-design-dark' = 'minorun-marp-skill\skills\slide-design-dark'
     'slide-figures'     = 'minorun-marp-skill\skills\slide-figures'
     'yomiyasu'          = 'yomiyasu\skills\yomiyasu'
+    'pdf-translate'     = 'paper-translate-agent-skill\pdf-translate'
+    'zotero-translate'  = 'zotero-translate-skill\skills\zotero-translate'
+    'creating-marp-slides' = 'marp-slides\.claude\skills\creating-marp-slides'
+    'marp-slide'        = 'agent-toolkit\skills\marp-slide'
+    'interactive-slide' = 'interactive-slide\plugins\interactive-slide\skills\interactive-slide'
+}
+
+# Register the Japanese originals only; English variants have the same names.
+$scholarlyRoot = Join-Path $projectRoot 'scholarly-agent-skills\skills\ja'
+if (-not (Test-Path -LiteralPath $scholarlyRoot -PathType Container)) {
+    throw 'Missing scholarly skills; run git submodule update --init --recursive first.'
+}
+foreach ($skill in Get-ChildItem -LiteralPath $scholarlyRoot -Directory | Sort-Object Name) {
+    if (Test-Path -LiteralPath (Join-Path $skill.FullName 'SKILL.md') -PathType Leaf) {
+        if ($sources.Contains($skill.Name)) {
+            throw "Duplicate upstream skill name: $($skill.Name)"
+        }
+        $sources.Add($skill.Name, "scholarly-agent-skills\skills\ja\$($skill.Name)")
+    }
 }
 
 function Add-SkillJunction {
