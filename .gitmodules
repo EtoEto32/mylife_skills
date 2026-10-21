@@ -25,3 +25,6 @@
 [submodule "agent-builder-skills"]
 	path = agent-builder-skills
 	url = https://github.com/minorun365/agent-builder-skills.git
+[submodule "literature-review"]
+	path = literature-review
+	url = https://github.com/chenlu-hung/literature-review.git

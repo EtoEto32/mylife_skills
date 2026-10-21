@@ -23,6 +23,7 @@ $sources = [ordered]@{
     'kb-demo-app-auth' = 'agent-builder-skills\skills\kb-demo-app-auth'
     'kb-frontend-sse' = 'agent-builder-skills\skills\kb-frontend-sse'
     'cdkd-deploy' = 'agent-builder-skills\skills\cdkd-deploy'
+    'literature-review-ml' = 'literature-review'
 }
 
 # Translation is consolidated into the local academic-paper-ja-translator.

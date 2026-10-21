@@ -83,8 +83,9 @@ Gitでジャンクションを配布することは想定していません。�
 | [softaworks/agent-toolkit](https://github.com/softaworks/agent-toolkit) | `marp-slide` | `agent-toolkit/skills/marp-slide` |
 | [hora-algebra/interactive-slide](https://github.com/hora-algebra/interactive-slide) | `interactive-slide` | `interactive-slide/plugins/interactive-slide/skills/interactive-slide` |
 | [minorun365/agent-builder-skills](https://github.com/minorun365/agent-builder-skills) | AWSのエージェントWebアプリ開発用8スキル（下表） | `agent-builder-skills/skills/<スキル名>` |
+| [chenlu-hung/literature-review](https://github.com/chenlu-hung/literature-review) | `literature-review-ml`：機械学習・統計分野の体系的な文献レビュー | `literature-review/` |
 
-5リポジトリはGitサブモジュールとしてクローンしています。Scholarlyは日本語版のみ、agent-toolkitは指定されたMarpスキルのみを登録し、同名の英語版や無関係なスキルは読み込み先に追加しません。既存5スキルと合わせて外部スキル39件と、下記の自作スキル1件を、このプロジェクトで使う構成です。
+6リポジトリはGitサブモジュールとしてクローンしています。Scholarlyは日本語版のみ、agent-toolkitは指定されたMarpスキルのみを登録し、同名の英語版や無関係なスキルは読み込み先に追加しません。既存5スキルと合わせて外部スキル40件と、下記の自作スキル1件を、このプロジェクトで使う構成です。
 
 Agent Builderから登録するスキルは次の8つです。スキルと参照資料の登録であり、AWSへのデプロイや認証設定は実行しません。
 
@@ -116,12 +117,15 @@ $academic-paper-ja-translator この論文のIntroductionだけを英日対訳�
 
 ```text
 $pdf-paper-ingestion この論文PDFをMarkdownにして
+$literature-review-ml この研究テーマの文献レビューを日本語で作成して
 $creating-marp-slides この内容からMarp資料を作って
 $marp-slide この資料をtechテーマで整えて
 $interactive-slide この発表原稿から操作できるHTMLスライドを作って
 ```
 
 登録先はプロジェクトの`.agents/skills/`です。全プロジェクト共通のユーザースキル領域には追加していません。Windowsでのパス・保存先の扱いはルートの`AGENTS.md`に記載しています。相対参照はジャンクションの見かけの位置ではなく、配布元の実体を基準に解決します。
+
+`literature-review-ml`は、検索範囲の設定、複数の論文データベースでの検索、重複除去と選定、研究内容の抽出、再現性の評価、論点ごとの整理、引用の検証、PDF出力を扱います。スキル本文は英語ですが、日本語で依頼されたレビューは日本語で作成します。補助スクリプトは`literature-review/scripts/`にあり、PDF出力にはPandocとXeLaTeXが必要です。登録確認と、実際の論文検索・レビュー作成・PDF出力の成功は別です。
 
 登録は依存ライブラリのインストールや翻訳実行とは別です。翻訳時のPDF抽出・組版ツールは、出力形式と実行環境に合わせて用意します。MarpのPDF/PPTX出力はMarp CLIと対応ブラウザ、interactive-slideの数式・QR・画面検査は対応するNode/Pythonライブラリを使います。APIキーはこの登録作業では設定していません。
 
