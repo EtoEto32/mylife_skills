@@ -28,3 +28,15 @@
 [submodule "literature-review"]
 	path = literature-review
 	url = https://github.com/chenlu-hung/literature-review.git
+[submodule "youtube-skills"]
+	path = youtube-skills
+	url = https://github.com/artemchuikin/youtube-skills.git
+[submodule "awesome-codex-skills"]
+	path = awesome-codex-skills
+	url = https://github.com/composio-community/awesome-codex-skills.git
+[submodule "obsidian-skills"]
+	path = obsidian-skills
+	url = https://github.com/kepano/obsidian-skills.git
+[submodule "make-note-skills"]
+	path = make-note-skills
+	url = https://github.com/birbirbrian/make-note-skills.git

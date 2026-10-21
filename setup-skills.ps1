@@ -24,6 +24,15 @@ $sources = [ordered]@{
     'kb-frontend-sse' = 'agent-builder-skills\skills\kb-frontend-sse'
     'cdkd-deploy' = 'agent-builder-skills\skills\cdkd-deploy'
     'literature-review-ml' = 'literature-review'
+    'youtube-full' = 'youtube-skills\skills\youtube-full'
+    'file-organizer' = 'awesome-codex-skills\file-organizer'
+    'obsidian-markdown' = 'obsidian-skills\skills\obsidian-markdown'
+    'obsidian-bases' = 'obsidian-skills\skills\obsidian-bases'
+    'json-canvas' = 'obsidian-skills\skills\json-canvas'
+    'obsidian-cli' = 'obsidian-skills\skills\obsidian-cli'
+    'defuddle' = 'obsidian-skills\skills\defuddle'
+    'knap' = 'obsidian-skills\skills\knap'
+    'make-note' = 'make-note-skills\skills\make-note'
 }
 
 # Translation is consolidated into the local academic-paper-ja-translator.
