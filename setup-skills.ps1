@@ -41,16 +41,72 @@ foreach ($skill in Get-ChildItem -LiteralPath $scholarlyRoot -Directory | Sort-O
     }
 }
 
+function Get-SkillTreeManifest {
+    param([string]$RootPath)
+
+    $root = (Resolve-Path -LiteralPath $RootPath).Path.TrimEnd('\')
+    foreach ($item in Get-ChildItem -LiteralPath $root -Force -Recurse | Sort-Object FullName) {
+        if ($item.Attributes -band [IO.FileAttributes]::ReparsePoint) {
+            throw "Nested links were preserved; inspect this directory manually: $root"
+        }
+        $relative = $item.FullName.Substring($root.Length + 1)
+        if ($item.PSIsContainer) {
+            "D|$relative"
+        } else {
+            $hash = (Get-FileHash -LiteralPath $item.FullName -Algorithm SHA256).Hash
+            "F|$relative|$($item.Length)|$hash"
+        }
+    }
+}
+
 function Add-SkillJunction {
     param([string]$LinkPath, [string]$TargetPath)
 
     $target = (Resolve-Path -LiteralPath $TargetPath).Path
     $existing = Get-Item -LiteralPath $LinkPath -Force -ErrorAction SilentlyContinue
     if ($null -ne $existing) {
-        if ($existing.LinkType -ne 'Junction' -or
-            [IO.Path]::GetFullPath([string]@($existing.Target)[0]) -ne $target) {
+        if ($existing.LinkType -eq 'Junction' -and
+            [IO.Path]::GetFullPath([string]@($existing.Target)[0]) -eq $target) {
+            return
+        }
+        # Migrate only an ordinary directory with exactly the same contents.
+        # Different contents and existing links are never replaced automatically.
+        if (-not $existing.PSIsContainer -or
+            ($existing.Attributes -band [IO.FileAttributes]::ReparsePoint)) {
             throw "Existing path was preserved; resolve this conflict manually: $LinkPath"
         }
+        $originalManifest = @(Get-SkillTreeManifest -RootPath $existing.FullName)
+        $targetManifest = @(Get-SkillTreeManifest -RootPath $target)
+        if (Compare-Object -ReferenceObject $originalManifest -DifferenceObject $targetManifest) {
+            throw "Different contents were preserved; resolve this conflict manually: $LinkPath"
+        }
+
+        $rootPrefix = [IO.Path]::GetFullPath($projectRoot).TrimEnd('\') + '\'
+        $fullLink = [IO.Path]::GetFullPath($LinkPath)
+        if (-not $fullLink.StartsWith($rootPrefix, [StringComparison]::OrdinalIgnoreCase)) {
+            throw "Refusing to move a path outside the project: $fullLink"
+        }
+        $relative = $fullLink.Substring($rootPrefix.Length)
+        $backupId = (Get-Date -Format 'yyyyMMdd-HHmmss') + '-' + [Guid]::NewGuid().ToString('N')
+        $backupPath = [IO.Path]::GetFullPath((Join-Path (Join-Path $projectRoot ".skill-backups\$backupId") $relative))
+        if (-not $backupPath.StartsWith($rootPrefix, [StringComparison]::OrdinalIgnoreCase)) {
+            throw "Refusing to create a backup outside the project: $backupPath"
+        }
+        New-Item -ItemType Directory -Path (Split-Path -Parent $backupPath) -Force | Out-Null
+        Move-Item -LiteralPath $fullLink -Destination $backupPath
+        try {
+            $backupManifest = @(Get-SkillTreeManifest -RootPath $backupPath)
+            if (Compare-Object -ReferenceObject $originalManifest -DifferenceObject $backupManifest) {
+                throw "Backup verification failed: $backupPath"
+            }
+            New-Item -ItemType Junction -Path $fullLink -Target $target | Out-Null
+        } catch {
+            if (-not (Test-Path -LiteralPath $fullLink)) {
+                Move-Item -LiteralPath $backupPath -Destination $fullLink
+            }
+            throw
+        }
+        Write-Output "Preserved identical directory in backup: $backupPath"
         return
     }
     New-Item -ItemType Junction -Path $LinkPath -Target $target | Out-Null

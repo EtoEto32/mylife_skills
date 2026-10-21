@@ -1,6 +1,7 @@
 # Local Windows junctions; recreate with setup-skills.ps1.
 /.agents/skills/
 /.claude/skills/
+/.skill-backups/
 /skills/marp-creator
 /skills/slide-story
 /skills/slide-design-dark
