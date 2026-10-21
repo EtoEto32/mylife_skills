@@ -1,29 +1,112 @@
 # Codex・Claude Code 共通スキル
 
-スキルごとに1つの `SKILL.md` を保守し、CodexとClaude Codeで共有します。
-この構成は、このプロジェクト内で使うローカルスキル用です。
+## 概要
 
-## 共有の仕組み
+CodexとClaude Codeで使うスキルをまとめたリポジトリです。論文の執筆・翻訳、スライド作成、ノート整理、AWSを使った開発などに対応しています。
 
-Codexのプロジェクト用スキルは `.agents/skills/`、Claude Codeのプロジェクト用スキルは `.claude/skills/` に置きます。それぞれの読み込み先から、同じスキルフォルダを参照させます。読み込み先の仕様は、[Codex公式ドキュメント](https://learn.chatgpt.com/docs/build-skills)と[Claude Code公式ドキュメント](https://code.claude.com/docs/en/skills)を参照してください。
+スキルの実体を1か所に置き、両ツールから同じフォルダを参照します。外部スキルはGitサブモジュール、自作スキルはこのリポジトリ内で管理しています。対象はWindows環境で、このプロジェクトを開いて使う構成です。
 
-このリポジトリでは、Windowsのディレクトリジャンクションを使います。次は `slide-story` の例です。
+## 現在使えるskills
 
-```text
-minorun-marp-skill/skills/slide-story/  ← スキルの実体
-  SKILL.md
-skills/slide-story/                   ← 実体へのジャンクション
-.agents/skills/slide-story/           ← 同じ実体へのジャンクション（Codex）
-.claude/skills/slide-story/            ← 同じ実体へのジャンクション（Claude Code）
-```
+登録しているスキルは50件です。外部スキル49件と、自作の翻訳スキル1件を含みます。以下の名前は`setup-skills.ps1`の登録名です。
 
-3つの参照先は同じフォルダです。コピーを同期する必要はなく、どの参照先から編集しても実体に反映されます。補助ファイルも共有するため、`SKILL.md` だけでなくスキルフォルダ全体をリンクします。
+### 文章・翻訳・会話のノート化
 
-`skills/` はこのリポジトリ独自の編集・整理用ディレクトリです。ツールによる検出には `.agents/skills/` と `.claude/skills/` を使います。
+| スキル名 | 用途 |
+| --- | --- |
+| `yomiyasu` | 意味を保ちながら、不自然な日本語や直訳調の表現を推敲する |
+| `academic-paper-ja-translator` | 英語論文を自然な日本語に翻訳する。原文の主張・条件・数式・引用を保持する自作スキル |
+| `make-note` | 会話の内容をMarkdownノートにまとめる。このプロジェクトでは日本語が既定で、保存先は指定がなければ作業先の`Note/` |
 
-## 別のPCで使い始める
+配布元は[yomiyasu](https://github.com/nanaism/yomiyasu)と[make-note-skills](https://github.com/birbirbrian/make-note-skills)です。翻訳には`academic-paper-ja-translator`を使います。日本語原稿の推敲には`yomiyasu`を使います。
 
-外部スキルはGitサブモジュールとして登録しています。最初に取得してから、ローカルのリンクを作ります。
+### 文献調査・論文執筆
+
+| スキル名 | 用途 |
+| --- | --- |
+| `literature-review-ml` | 機械学習・統計分野の文献を検索・選定し、論点ごとに整理する |
+| `literature-search` | 複数の論文データベースで文献を検索する |
+| `literature-gap-analysis` | 先行研究で分かっていることと、新たに取り組む課題を整理する |
+| `research-plan-workshop` | 研究課題、想定読者、研究を完成とする条件を整理する |
+| `paper-writing-onboarding` | 論文執筆の準備、作業の流れ、引用の基本を確認する |
+| `pdf-paper-ingestion` | テキストを含む論文PDFから見出しや画像を抽出し、Markdownに整理する |
+| `primary-data-integration` | 実験ログや調査データを、個人情報などに配慮して論文に取り込む |
+| `source-criticism-gate` | 引用する文献・Webサイト・データの信頼性を確認する |
+| `author-publication-versions` | Zenodoに公開した自著論文のバージョンとDOIを確認・記録する |
+| `citation-traceability-audit` | 本文の引用、書誌情報、参照文献の実体が対応しているか確認する |
+| `claim-evidence-gate` | 論文の主張を、実験データや引用文献がどこまで裏づけているか確認する |
+| `counter-argument-tdd` | 想定される反論や反例を整理してから、主張を組み立てる |
+| `design-science-research` | デザインサイエンス研究の論文構成と、研究過程の記録を整理する |
+| `diachronic-claim-typing` | 概念史や制度史などで、異なる時代を結びつける主張の妥当性を確認する |
+| `scholarly-concept-modeling` | 論文で使う概念を定義し、意味の混同を防ぐ |
+| `prose-style-guide` | 専門用語の説明や文の長さを整え、読みやすい学術文体で書く |
+| `terminology-consistency` | 用語の表記揺れと説明の不足を確認する |
+| `reviewer-readability-check` | 読者に伝わりにくい内部記号や、節番号・参照の不整合を確認する |
+| `sensitive-expression-guard` | 過度な断定や、誤解につながる表現を確認する |
+| `pre-reading-briefing` | 校閲前に、各節の前提・論点・想定反論を整理する |
+| `pre-submission-triage` | 投稿前の検査結果を読み、修正や確認が必要な項目を整理する |
+| `submission-venue-advisor` | 研究分野や目的に合う投稿先と、投稿時の入力内容を検討する |
+| `session-research-handoff` | 研究の進捗、未解決の課題、次の作業を引き継ぐ |
+| `friction-driven-skill-improvement` | 執筆中の訂正や手作業を記録し、スキルの改善案にまとめる |
+
+配布元は[literature-review](https://github.com/chenlu-hung/literature-review)と[scholarly-agent-skills](https://github.com/hideshi/scholarly-agent-skills)です。Scholarlyは翻訳を除く日本語版23スキルを登録しています。
+
+### スライド作成
+
+| スキル名 | 用途 |
+| --- | --- |
+| `marp-creator` | メモの整理から構成を考え、Marpスライドを作る |
+| `slide-story` | 登壇・講義スライドの流れ、見出し、発表時間を検討する |
+| `slide-design-dark` | 黒地のMarpスライドの余白、配色、表などを整える |
+| `slide-figures` | スライドに載せる図・構成図・挿絵を作る |
+| `creating-marp-slides` | Marpスライドを作成・修正し、HTML・PDF・PPTXに出力する |
+| `marp-slide` | テーマを選んでMarpスライドの見た目を整える |
+| `interactive-slide` | 発表資料を、図や操作機能を含むHTMLスライドにする |
+
+配布元は[classmethod-marp-theme](https://github.com/classmethod/classmethod-marp-theme)、[minorun-marp-skill](https://github.com/minorun365/minorun-marp-skill)、[marp-slides](https://github.com/toku345/marp-slides)、[agent-toolkit](https://github.com/softaworks/agent-toolkit)、[interactive-slide](https://github.com/hora-algebra/interactive-slide)です。
+
+### Obsidian
+
+| スキル名 | 用途 |
+| --- | --- |
+| `obsidian-markdown` | 内部リンク、埋め込み、コールアウトなどを使ったノートを書く |
+| `obsidian-bases` | ノートを一覧・絞り込み表示するBasesファイルを作成・編集する |
+| `json-canvas` | ノートや図のつながりを表すCanvasファイルを作成・編集する |
+| `obsidian-cli` | CLIからノートを検索・作成し、Vaultを操作する |
+| `defuddle` | Webページから本文を抽出してMarkdownにする |
+| `knap` | JSON・CSVのデータとテンプレートからMarkdownを生成する |
+
+配布元は[obsidian-skills](https://github.com/kepano/obsidian-skills)です。
+
+### AWS・エージェント開発
+
+| スキル名 | 用途 |
+| --- | --- |
+| `kb-agent-webapp-cdk` | S3・CloudFront・AgentCoreを使うWebアプリ全体を設計する |
+| `kb-agentcore-cdk` | AgentCore RuntimeのCDK定義、認証、コンテナ構成を扱う |
+| `kb-strands-agentcore` | Strands Agentsでエージェント、ツール、会話履歴を扱う |
+| `kb-agentcore-observability` | トレースやメトリクスを設定し、動作を調査する |
+| `kb-agentcore-identity` | 外部サービスに接続するための認証を扱う |
+| `kb-demo-app-auth` | Cognito、Googleログイン、パスキーを使った認証を構成する |
+| `kb-frontend-sse` | SSEによる応答のストリーミングを実装・調査する |
+| `cdkd-deploy` | コミュニティ製CDKDでCDKアプリをデプロイ・調査する |
+
+配布元は[agent-builder-skills](https://github.com/minorun365/agent-builder-skills)です。
+
+### 動画・ファイル整理
+
+| スキル名 | 用途 |
+| --- | --- |
+| `youtube-full` | YouTubeの字幕、検索結果、チャンネル情報、再生リストを取得する |
+| `file-organizer` | ファイル構成や重複を調べ、整理案の作成や移動・名前変更を支援する |
+
+配布元は[youtube-skills](https://github.com/artemchuikin/youtube-skills)と[awesome-codex-skills](https://github.com/composio-community/awesome-codex-skills)です。後者から登録しているのは`file-organizer`だけです。
+
+## セットアップ方法
+
+### 初回の取得と登録
+
+WindowsでGitとPowerShellを用意し、次を実行してください。このリポジトリは非公開のため、取得にはアクセス権とGitHubの認証が必要です。
 
 ```powershell
 git clone --recurse-submodules https://github.com/EtoEto32/mylife_skills.git
@@ -31,158 +114,71 @@ Set-Location mylife_skills
 .\setup-skills.ps1
 ```
 
-すでに通常の `git clone` で取得した場合は、先に次を実行してください。
+すでに通常の`git clone`で取得している場合は、リポジトリ内で次を実行してください。
 
 ```powershell
 git submodule update --init --recursive
 .\setup-skills.ps1
 ```
 
-このリポジトリは非公開のため、取得にはアクセス権とGitHubの認証が必要です。
-
-## 初期設定・スキル追加後
-
-WindowsのPowerShellで実行します。管理者権限が不要なディレクトリジャンクションを作成します。
-
-```powershell
-.\setup-skills.ps1
-```
-
-実行ポリシーで拒否される場合は、このスクリプトを確認したうえで次を使います。
+実行ポリシーで拒否される場合は、スクリプトを確認したうえで次を使います。
 
 ```powershell
 powershell -NoProfile -ExecutionPolicy Bypass -File .\setup-skills.ps1
 ```
 
-既存のリンクはそのまま使います。同じ場所に通常のフォルダがあり、配布元と全ファイルの内容・ディレクトリ構成が一致する場合は、フォルダを退避してからジャンクションに切り替えます。退避先は `.skill-backups/<日時とID>/<元の相対パス>` です。移動後もSHA-256で内容を検証し、元のファイルを残します。退避フォルダはローカル専用で、Gitには追加しません。
+設定後、このプロジェクトで新しいチャットを開いてください。Codexでは`$yomiyasu この文章を読みやすくして`、Claude Codeでは`/yomiyasu この文章を読みやすくして`のように呼び出します。ツールによって一覧に配布元の接頭辞が付く場合は、表示されているスキルを選んでください。
 
-内容が異なるフォルダ、別の参照先を指すリンク、内部にリンクを含むフォルダは、自動で置き換えず停止します。独自の変更を配布元の内容で上書きすることはありません。
-ジャンクションはこのPC上の絶対パスを参照するため、別のPCへのコピーやフォルダ移動後はリンクを再設定する必要があります。
-Gitでジャンクションを配布することは想定していません。ソースフォルダとこのスクリプトを用意して、PCごとに実行してください。
+### CodexとClaude Codeで共通化する方法
 
-## 編集する場所
-
-`skills/<スキル名>/SKILL.md` を編集します。既存スキルでは、このパスも元の配布フォルダへのリンクなので、元のファイルが更新されます。
-`references/`、`scripts/`、`assets/` も同じフォルダを共有します。
-元の配布フォルダを更新すると、両ツールの参照先にも反映されます。上流の更新で自分の編集が上書きされないよう、編集内容は元リポジトリで管理してください。
-
-| スキル | 元のフォルダ |
-| --- | --- |
-| marp-creator | `classmethod-marp-theme/.claude/skills/marp-creator` |
-| slide-story | `minorun-marp-skill/skills/slide-story` |
-| slide-design-dark | `minorun-marp-skill/skills/slide-design-dark` |
-| slide-figures | `minorun-marp-skill/skills/slide-figures` |
-| yomiyasu | `yomiyasu/skills/yomiyasu` |
-
-`satori` はリポジトリ直下を単一スキルとして登録していません。上の5スキルに加え、以下の外部スキルも登録しています。
-
-| 配布元 | Codexでの呼び出し名 | 元のフォルダ |
-| --- | --- | --- |
-| [hideshi/scholarly-agent-skills](https://github.com/hideshi/scholarly-agent-skills) | 翻訳を除く日本語版23スキル。PDF変換は`pdf-paper-ingestion` | `scholarly-agent-skills/skills/ja/<スキル名>` |
-| [toku345/marp-slides](https://github.com/toku345/marp-slides) | `creating-marp-slides` | `marp-slides/.claude/skills/creating-marp-slides` |
-| [softaworks/agent-toolkit](https://github.com/softaworks/agent-toolkit) | `marp-slide` | `agent-toolkit/skills/marp-slide` |
-| [hora-algebra/interactive-slide](https://github.com/hora-algebra/interactive-slide) | `interactive-slide` | `interactive-slide/plugins/interactive-slide/skills/interactive-slide` |
-| [minorun365/agent-builder-skills](https://github.com/minorun365/agent-builder-skills) | AWSのエージェントWebアプリ開発用8スキル（下表） | `agent-builder-skills/skills/<スキル名>` |
-| [chenlu-hung/literature-review](https://github.com/chenlu-hung/literature-review) | `literature-review-ml`：機械学習・統計分野の体系的な文献レビュー | `literature-review/` |
-| [artemchuikin/youtube-skills](https://github.com/artemchuikin/youtube-skills) | `youtube-full`：字幕取得、動画検索、チャンネル・再生リストの取得 | `youtube-skills/skills/youtube-full/` |
-| [composio-community/awesome-codex-skills](https://github.com/composio-community/awesome-codex-skills) | `file-organizer`のみ：ファイル整理、重複の調査 | `awesome-codex-skills/file-organizer/` |
-| [kepano/obsidian-skills](https://github.com/kepano/obsidian-skills) | `obsidian-markdown`、`obsidian-bases`、`json-canvas`、`obsidian-cli`、`defuddle`、`knap` | `obsidian-skills/skills/<スキル名>/` |
-| [birbirbrian/make-note-skills](https://github.com/birbirbrian/make-note-skills) | `make-note`：会話から構造化したMarkdownノートを作成 | `make-note-skills/skills/make-note/` |
-
-上表の10リポジトリはGitサブモジュールとしてクローンしています。Scholarlyは日本語版のみ、agent-toolkitは指定されたMarpスキルのみを登録し、同名の英語版や無関係なスキルは読み込み先に追加しません。既存5スキルと合わせて外部スキル49件と、下記の自作スキル1件を、このプロジェクトで使う構成です。
-
-Agent Builderから登録するスキルは次の8つです。スキルと参照資料の登録であり、AWSへのデプロイや認証設定は実行しません。
-
-| 呼び出し名 | 用途 |
-| --- | --- |
-| `kb-agent-webapp-cdk` | Webアプリ全体の構成、S3・CloudFrontでの配信 |
-| `kb-agentcore-cdk` | AgentCore RuntimeのCDK定義、認証、コンテナ |
-| `kb-strands-agentcore` | Strands Agentsのエージェント・ツール・会話履歴 |
-| `kb-agentcore-observability` | トレース、メトリクス、監視の調査 |
-| `kb-agentcore-identity` | 外部サービスに接続するための認証 |
-| `kb-demo-app-auth` | Cognito、Googleログイン、パスキー |
-| `kb-frontend-sse` | SSEによる応答のストリーミング |
-| `cdkd-deploy` | コミュニティ製CDKDによるCDKのデプロイ |
-
-### 英語論文の日本語翻訳（自作）
-
-`skills/academic-paper-ja-translator/` は、このリポジトリで管理する自作スキルです。英語論文の翻訳を明示的に依頼されたときに使用し、翻訳方針はfaithfulのみ、既定の出力は日本語Markdownです。要約・解説だけの依頼や、日本語原稿の推敲とは区別します。
+`setup-skills.ps1`は、Windowsのディレクトリジャンクションを使い、両ツールの読み込み先から同じスキルを参照させます。管理者権限は不要です。`slide-story`の場合は、次の構成になります。
 
 ```text
-$academic-paper-ja-translator この英語論文PDFを自然な日本語に全文翻訳して
-$academic-paper-ja-translator この論文のIntroductionだけを英日対訳にして
+minorun-marp-skill/skills/slide-story/  スキルの実体
+skills/slide-story/                   編集・整理用のリンク
+.agents/skills/slide-story/           Codex用のリンク
+.claude/skills/slide-story/           Claude Code用のリンク
 ```
 
-構造・用語・図表・数式・引用の保持と、原文と訳文の照合を指示します。同梱の `scripts/audit_translation.py` は対応台帳の欠落・重複・範囲外と登録した保護文字列を検査する補助であり、翻訳や意味の一致を自動保証するものではありません。PDF・DOCXなどのファイル生成には、その環境で利用できる抽出・組版ツールを使用します。
+リンクは同じフォルダを指します。`SKILL.md`だけでなく、`references/`、`scripts/`、`assets/`も共有するため、コピー同士を同期する必要はありません。自作の`academic-paper-ja-translator`は`skills/`内の実フォルダを共有元にしています。
 
-翻訳スキルは `academic-paper-ja-translator` に一本化しています。`academic-paper-translation`、`pdf-translate`、`zotero-translate` は登録しません。`setup-skills.ps1` は旧3スキルの既知のジャンクションを削除し、自作スキルの実フォルダをCodexとClaude Codeへ登録します。旧スキルの場所に通常フォルダや別のリンクがある場合は、内容を残して停止します。Scholarlyの翻訳以外の23スキルは引き続き登録します。
+この設定はプロジェクト内で使うものです。全プロジェクト共通のユーザースキル領域には追加しません。Windowsでのパスや保存先の扱いは`AGENTS.md`に記載しています。スキル内の相対パスは、リンクの見かけの場所ではなく、実体のフォルダを基準に読みます。
 
-設定後の次のターンから利用できます。一覧が更新されない場合は、このプロジェクトで新しいチャットを開いてください。呼び出し例:
+既存の正しいリンクは再利用します。通常フォルダの内容が共有元と完全に一致する場合は、`.skill-backups/<日時とID>/<元の相対パス>`へ退避してからリンクに切り替えます。内容が異なるフォルダや別の参照先を指すリンクは上書きせず、処理を止めます。
 
-```text
-$pdf-paper-ingestion この論文PDFをMarkdownにして
-$literature-review-ml この研究テーマの文献レビューを日本語で作成して
-$youtube-full このYouTube動画の内容を日本語でまとめて
-$file-organizer このフォルダの整理案を作って
-$obsidian-markdown このノートをObsidian用に整えて
-$make-note この会話を日本語のノートにして
-$creating-marp-slides この内容からMarp資料を作って
-$marp-slide この資料をtechテーマで整えて
-$interactive-slide この発表原稿から操作できるHTMLスライドを作って
+ジャンクションはPCごとの絶対パスを参照し、Gitには保存しません。別のPCでは設定スクリプトを実行してください。フォルダを移動した場合は、以前の場所を指すリンクを確認し、作り直す必要があります。
+
+### 更新・スキルの追加
+
+リモートの変更を取り込む場合は、次を実行します。サブモジュールは、このリポジトリに記録されたコミットに合わせて取得します。
+
+```powershell
+git pull --ff-only
+git submodule update --init --recursive
+.\setup-skills.ps1
 ```
 
-登録先はプロジェクトの`.agents/skills/`です。全プロジェクト共通のユーザースキル領域には追加していません。Windowsでのパス・保存先の扱いはルートの`AGENTS.md`に記載しています。相対参照はジャンクションの見かけの位置ではなく、配布元の実体を基準に解決します。
+自作スキルを追加する場合は、`skills/<スキル名>/SKILL.md`を実フォルダに作成し、設定スクリプトを実行します。外部スキルを追加する場合は、配布元をGitサブモジュールで取得し、`setup-skills.ps1`の`$sources`にスキル名と実体の相対パスを登録してください。`skills/<スキル名>`のリンクは`.gitignore`で除外します。
 
-`literature-review-ml`は、検索範囲の設定、複数の論文データベースでの検索、重複除去と選定、研究内容の抽出、再現性の評価、論点ごとの整理、引用の検証、PDF出力を扱います。スキル本文は英語ですが、日本語で依頼されたレビューは日本語で作成します。補助スクリプトは`literature-review/scripts/`にあり、PDF出力にはPandocとXeLaTeXが必要です。登録確認と、実際の論文検索・レビュー作成・PDF出力の成功は別です。
+外部スキルを編集すると、対応するサブモジュール内のファイルが変わります。変更を共有するには、書き込み可能なforkなどでコミット・プッシュし、その後で親リポジトリの参照を更新してください。親リポジトリのコミットだけでは、サブモジュール内の編集内容は保存できません。
 
-`youtube-full`の利用にはTranscriptOutのAPIキーを環境変数`TRANSCRIPTOUT_API_KEY`に設定する必要があります。スキルの登録だけではアカウント作成やAPI呼び出しを行いません。`obsidian-cli`は起動中のObsidianとCLI設定が必要です。`defuddle`はWebページから本文を抽出するCLI、`knap`はデータとテンプレートからMarkdownを生成するCLIを使用します。これらの導入は実際に使うときに行います。
+### 利用に必要なツール・設定
 
-`make-note`は、このプロジェクトでは日本語を既定とし、保存先は指定がなければ作業先の`Note/`です。配布元の個人用Linuxパスや著者名は引き継ぎません。テンプレートの指定がなければ同梱のものを使い、日本語の見出しに整えます。上流ファイルは変更せず、環境に合わせた扱いを`AGENTS.md`に記載しています。
+スキルの登録と、検索・翻訳・資料生成などの実行は別です。必要なツールは、実際に使うスキルの手順に従って準備してください。
 
-登録は依存ライブラリのインストールや翻訳実行とは別です。翻訳時のPDF抽出・組版ツールは、出力形式と実行環境に合わせて用意します。MarpのPDF/PPTX出力はMarp CLIと対応ブラウザ、interactive-slideの数式・QR・画面検査は対応するNode/Pythonライブラリを使います。APIキーはこの登録作業では設定していません。
+| 対象 | 必要なツール・設定 |
+| --- | --- |
+| `youtube-full` | TranscriptOutのAPIキーを環境変数`TRANSCRIPTOUT_API_KEY`に設定 |
+| `obsidian-cli` | 起動中のObsidianとCLI設定 |
+| `defuddle`・`knap` | それぞれのCLI。`knap`はNode.js 20以降 |
+| `literature-review-ml`のPDF出力 | PandocとXeLaTeX |
+| MarpのPDF・PPTX出力 | Marp CLIと対応ブラウザ |
+| `interactive-slide` | 数式・QRコード・画面検査に使うNode.js・Pythonライブラリ |
+| 論文翻訳のファイル出力 | 出力形式に応じたPDF抽出・組版ツール |
 
-## 新しい共通スキル
+スキルの追加だけでは、APIアカウントの作成や認証、AWSへのデプロイは実行しません。
 
-`skills/<スキル名>/SKILL.md` を作成し、上の設定コマンドを実行します。
-本文には両ツールで実行できる手順を書き、専用のツール名や専用変数が必要な手順はツールごとの条件を明記します。
-
-```markdown
----
-name: my-skill
-description: 何を行うスキルか、どんな依頼で使うか。
----
-
-# My Skill
-
-ここに共通の手順を書く。
-```
-
-自作スキルを `skills/` の実フォルダとして作成した場合は、そのフォルダをGitに追加します。外部スキルの `skills/` 内のリンクは `.gitignore` で除外しています。
-
-外部リポジトリから登録対象を増やす場合は、`setup-skills.ps1` の `$sources` にスキル名と実体の相対パスを追加してください。対応する `skills/<スキル名>` のリンクも `.gitignore` に追加します。
-
-## 共通スキルを書くコツ
-
-`name` と `description` を持つYAML frontmatterと、Markdownの手順を基本にします。`description` には、何ができるかに加えて、どんな依頼で使うかを書きます。
-
-本文の参照先は `references/style.md` など、スキルフォルダを基準に示すと移動しやすくなります。個人のPCの絶対パスは共通手順に埋め込まず、必要な実行環境や依存関係を明記してください。
-
-Claude Code固有のfrontmatter、変数、ツール名には依存しすぎないようにします。専用機能が必要なら「Claude Codeの場合」「Codexの場合」と手順を分けます。同じMarkdownを読めても、権限設定や実行制御まで共有されるわけではありません。
-
-## 読み込みと呼び出し
-
-Codexは `.agents/skills/<スキル名>`、Claude Codeは `.claude/skills/<スキル名>` から同じ実体を読みます。
-`.codex/skills` はこの構成では使用しません。
-設定後、このプロジェクトで新しいセッションを開始して一覧を確認してください。
-
-- Codex: `$yomiyasu この文章を読みやすくして`
-- Claude Code: `/yomiyasu この文章を読みやすくして`
-
-リンク先のファイルが同じであることと、各ツールでの実際の読み込みは別の確認です。
-Claude独自のfrontmatterや実行制御が、Codexでも同じように働くとは限りません。
-通常のClaudeチャットやCoworkへのアップロードは、このローカル設定の対象外です。
-
-## リンクの確認とトラブル対処
+### 登録の確認
 
 次のコマンドで、編集用・Codex用・Claude Code用のリンク先を確認できます。
 
@@ -194,35 +190,4 @@ Test-Path .agents/skills/slide-story/SKILL.md
 Test-Path .claude/skills/slide-story/SKILL.md
 ```
 
-3つとも `LinkType` が `Junction` で、`Target` が同じ実体を指しているか確認します。`Test-Path` が両方 `True` になったら、両ツールで明示的にスキルを呼び出し、手順を読めるか確認してください。リンクの確認だけでは、ツール側の検出・実行の確認にはなりません。
-
-| 症状 | 確認すること |
-| --- | --- |
-| `Missing source SKILL.md` | サブモジュールを取得したか、`$sources` のパスが正しいか |
-| `Existing path was preserved` / `Different contents were preserved` | 異なる内容のフォルダや別のリンクがないか。既存内容を残し、差分を確認してから競合を解消する |
-| PC変更・フォルダ移動後に読めない | `Target` が以前の絶対パスを指していないか。古いリンクを確認して作り直す |
-| ファイルはあるがスキルが見つからない | プロジェクトを開く場所、frontmatterの名前・説明、同名スキルの有無を確認し、新しいセッションで試す |
-
-設定スクリプトは、同じ実体を指す既存のリンクを再利用します。内容が完全に一致する通常フォルダだけを退避・リンク化し、別のリンク先への自動付け替えはしません。再実行しても、正常なリンクから新しい退避フォルダは作りません。
-
-yomiyasuは、Codex側に保存されていたv1.1.1の全14ファイルと一致する上流コミット `373356eb874af5184962c88e925ea7eb58450318` を共有元に指定しています。通常フォルダの既存内容を残し、Codex・Claude Code・編集用の3か所から同じ版を参照するためです。
-
-退避とリンク化の回帰テストは `./tests/setup-skills.Tests.ps1` で実行できます。同一内容の退避、再実行時の安定性、独自変更・別のリンク・プロジェクト外のフォルダの保護を確認します。テスト用ファイルは、一時フォルダ内の表示された場所に残します。
-
-## Gitでの保存と更新
-
-リンク自体はPCごとに作成し、Gitでは設定スクリプト、自作スキル、サブモジュールの参照を管理します。PPT、プレビュー画像、検査結果、資料生成用のビルドスクリプトは、現在の `.gitignore` に従って除外します。
-
-既存スキルの実体を編集すると、変更は対応するサブモジュール内に発生します。親リポジトリでコミットするだけでは、内部の変更内容を保存できません。自分のforkなど書き込み可能な取得元を用意し、サブモジュール内でコミット・プッシュした後、親リポジトリで更新された参照をコミット・プッシュします。取得元をforkへ変更した場合は `.gitmodules` も更新してください。
-
-他のPCで親リポジトリの更新を取り込む場合は、サブモジュールも記録されたコミットに合わせます。
-
-```powershell
-git pull --ff-only
-git submodule update --init --recursive
-.\setup-skills.ps1
-```
-
-上流の最新版を取り込む操作と、親リポジトリに記録された版を復元する操作は別です。上流を更新する前にサブモジュール内の未保存の編集を確認し、更新後は両ツールでスキルを呼び出して確認してください。
-
-公式仕様: [Codexのスキル](https://learn.chatgpt.com/docs/build-skills)、[Claude Codeのスキル](https://code.claude.com/docs/en/skills)。
+3か所の`Target`が同じ実体を指し、両方の`Test-Path`が`True`になれば配置を確認できます。その後、各ツールでスキルを呼び出して確認してください。一覧に出ない場合は、このプロジェクトで新しいチャットを開いてください。配置の確認だけでは、検索やPDF生成などの成功を確認したことにはなりません。
