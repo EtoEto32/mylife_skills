@@ -106,7 +106,7 @@ CodexとClaude Codeで使うスキルをまとめたリポジトリです。論�
 
 ### 初回の取得と登録
 
-WindowsでGitとPowerShellを用意し、次を実行してください。このリポジトリは非公開のため、取得にはアクセス権とGitHubの認証が必要です。
+WindowsでGitとPowerShellを用意し、次を実行してください。
 
 ```powershell
 git clone --recurse-submodules https://github.com/EtoEto32/mylife_skills.git
