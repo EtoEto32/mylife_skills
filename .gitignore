@@ -10,6 +10,7 @@
 
 # Bundled runtime dependencies are supplied by Codex on each PC.
 node_modules/
+__pycache__/
 
 # Generated presentations, previews, and validation outputs.
 /outputs/
@@ -20,12 +21,9 @@ node_modules/
 !/artifacts/*/build/*.mjs
 
 # External skill junctions added for papers and presentations.
-/skills/pdf-translate
-/skills/zotero-translate
 /skills/creating-marp-slides
 /skills/marp-slide
 /skills/interactive-slide
-/skills/academic-paper-translation
 /skills/author-publication-versions
 /skills/citation-traceability-audit
 /skills/claim-evidence-gate

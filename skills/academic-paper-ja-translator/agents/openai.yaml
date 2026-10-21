@@ -1,0 +1,4 @@
+interface:
+  display_name: "英語論文の日本語翻訳"
+  short_description: "英語論文を原文の意味・数式・引用を保ち、自然な日本語へ翻訳する"
+  default_prompt: "$academic-paper-ja-translator で、この英語論文を原文に忠実な自然な日本語に全文翻訳し、Markdownファイルにしてください。"

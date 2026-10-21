@@ -78,15 +78,13 @@ Gitでジャンクションを配布することは想定していません。�
 
 | 配布元 | Codexでの呼び出し名 | 元のフォルダ |
 | --- | --- | --- |
-| [hideshi/scholarly-agent-skills](https://github.com/hideshi/scholarly-agent-skills) | 日本語版24スキル。翻訳は`academic-paper-translation`、PDF変換は`pdf-paper-ingestion` | `scholarly-agent-skills/skills/ja/<スキル名>` |
-| [AIKONG2024/paper-translate-agent-skill](https://github.com/AIKONG2024/paper-translate-agent-skill) | `pdf-translate` | `paper-translate-agent-skill/pdf-translate` |
-| [Chael-Chael/zotero-translate-skill](https://github.com/Chael-Chael/zotero-translate-skill) | `zotero-translate` | `zotero-translate-skill/skills/zotero-translate` |
+| [hideshi/scholarly-agent-skills](https://github.com/hideshi/scholarly-agent-skills) | 翻訳を除く日本語版23スキル。PDF変換は`pdf-paper-ingestion` | `scholarly-agent-skills/skills/ja/<スキル名>` |
 | [toku345/marp-slides](https://github.com/toku345/marp-slides) | `creating-marp-slides` | `marp-slides/.claude/skills/creating-marp-slides` |
 | [softaworks/agent-toolkit](https://github.com/softaworks/agent-toolkit) | `marp-slide` | `agent-toolkit/skills/marp-slide` |
 | [hora-algebra/interactive-slide](https://github.com/hora-algebra/interactive-slide) | `interactive-slide` | `interactive-slide/plugins/interactive-slide/skills/interactive-slide` |
 | [minorun365/agent-builder-skills](https://github.com/minorun365/agent-builder-skills) | AWSのエージェントWebアプリ開発用8スキル（下表） | `agent-builder-skills/skills/<スキル名>` |
 
-7リポジトリはGitサブモジュールとしてクローンしています。Scholarlyは日本語版のみ、agent-toolkitは指定されたMarpスキルのみを登録し、同名の英語版や無関係なスキルは読み込み先に追加しません。既存5スキルと合わせて42スキルをこのプロジェクトで使う構成です。
+5リポジトリはGitサブモジュールとしてクローンしています。Scholarlyは日本語版のみ、agent-toolkitは指定されたMarpスキルのみを登録し、同名の英語版や無関係なスキルは読み込み先に追加しません。既存5スキルと合わせて外部スキル39件と、下記の自作スキル1件を、このプロジェクトで使う構成です。
 
 Agent Builderから登録するスキルは次の8つです。スキルと参照資料の登録であり、AWSへのデプロイや認証設定は実行しません。
 
@@ -101,13 +99,23 @@ Agent Builderから登録するスキルは次の8つです。スキルと参照
 | `kb-frontend-sse` | SSEによる応答のストリーミング |
 | `cdkd-deploy` | コミュニティ製CDKDによるCDKのデプロイ |
 
+### 英語論文の日本語翻訳（自作）
+
+`skills/academic-paper-ja-translator/` は、このリポジトリで管理する自作スキルです。英語論文の翻訳を明示的に依頼されたときに使用し、翻訳方針はfaithfulのみ、既定の出力は日本語Markdownです。要約・解説だけの依頼や、日本語原稿の推敲とは区別します。
+
+```text
+$academic-paper-ja-translator この英語論文PDFを自然な日本語に全文翻訳して
+$academic-paper-ja-translator この論文のIntroductionだけを英日対訳にして
+```
+
+構造・用語・図表・数式・引用の保持と、原文と訳文の照合を指示します。同梱の `scripts/audit_translation.py` は対応台帳の欠落・重複・範囲外と登録した保護文字列を検査する補助であり、翻訳や意味の一致を自動保証するものではありません。PDF・DOCXなどのファイル生成には、その環境で利用できる抽出・組版ツールを使用します。
+
+翻訳スキルは `academic-paper-ja-translator` に一本化しています。`academic-paper-translation`、`pdf-translate`、`zotero-translate` は登録しません。`setup-skills.ps1` は旧3スキルの既知のジャンクションを削除し、自作スキルの実フォルダをCodexとClaude Codeへ登録します。旧スキルの場所に通常フォルダや別のリンクがある場合は、内容を残して停止します。Scholarlyの翻訳以外の23スキルは引き続き登録します。
+
 設定後の次のターンから利用できます。一覧が更新されない場合は、このプロジェクトで新しいチャットを開いてください。呼び出し例:
 
 ```text
 $pdf-paper-ingestion この論文PDFをMarkdownにして
-$academic-paper-translation 原文と日本語訳を段落ごとに並べ、用語集も作って
-$pdf-translate このPDFを日本語に翻訳し、レイアウトを保ったPDFにして
-$zotero-translate Zoteroのこの論文を日本語に翻訳し、日本語版と対訳版を添付して
 $creating-marp-slides この内容からMarp資料を作って
 $marp-slide この資料をtechテーマで整えて
 $interactive-slide この発表原稿から操作できるHTMLスライドを作って
@@ -115,7 +123,7 @@ $interactive-slide この発表原稿から操作できるHTMLスライドを作
 
 登録先はプロジェクトの`.agents/skills/`です。全プロジェクト共通のユーザースキル領域には追加していません。Windowsでのパス・保存先の扱いはルートの`AGENTS.md`に記載しています。相対参照はジャンクションの見かけの位置ではなく、配布元の実体を基準に解決します。
 
-登録は依存ライブラリのインストールや翻訳実行とは別です。PDF翻訳は各スキルのdoctor/setupや初回実行で専用ランタイムを準備します。Zotero翻訳ではZotero本体と対象の添付PDFが必要で、bridgeの導入・再起動は実際の添付作業時に行います。MarpのPDF/PPTX出力はMarp CLIと対応ブラウザ、interactive-slideの数式・QR・画面検査は対応するNode/Pythonライブラリを使います。APIキーはこの登録作業では設定していません。
+登録は依存ライブラリのインストールや翻訳実行とは別です。翻訳時のPDF抽出・組版ツールは、出力形式と実行環境に合わせて用意します。MarpのPDF/PPTX出力はMarp CLIと対応ブラウザ、interactive-slideの数式・QR・画面検査は対応するNode/Pythonライブラリを使います。APIキーはこの登録作業では設定していません。
 
 ## 新しい共通スキル
 

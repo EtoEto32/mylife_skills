@@ -13,12 +13,6 @@
 [submodule "scholarly-agent-skills"]
 	path = scholarly-agent-skills
 	url = https://github.com/hideshi/scholarly-agent-skills.git
-[submodule "paper-translate-agent-skill"]
-	path = paper-translate-agent-skill
-	url = https://github.com/AIKONG2024/paper-translate-agent-skill.git
-[submodule "zotero-translate-skill"]
-	path = zotero-translate-skill
-	url = https://github.com/Chael-Chael/zotero-translate-skill.git
 [submodule "marp-slides"]
 	path = marp-slides
 	url = https://github.com/toku345/marp-slides.git

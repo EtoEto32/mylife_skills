@@ -12,8 +12,6 @@ $sources = [ordered]@{
     'slide-design-dark' = 'minorun-marp-skill\skills\slide-design-dark'
     'slide-figures'     = 'minorun-marp-skill\skills\slide-figures'
     'yomiyasu'          = 'yomiyasu\skills\yomiyasu'
-    'pdf-translate'     = 'paper-translate-agent-skill\pdf-translate'
-    'zotero-translate'  = 'zotero-translate-skill\skills\zotero-translate'
     'creating-marp-slides' = 'marp-slides\.claude\skills\creating-marp-slides'
     'marp-slide'        = 'agent-toolkit\skills\marp-slide'
     'interactive-slide' = 'interactive-slide\plugins\interactive-slide\skills\interactive-slide'
@@ -27,12 +25,39 @@ $sources = [ordered]@{
     'cdkd-deploy' = 'agent-builder-skills\skills\cdkd-deploy'
 }
 
+# Translation is consolidated into the local academic-paper-ja-translator.
+# Remove only known junctions from previous installations, preserving their targets.
+$retiredSources = [ordered]@{
+    'academic-paper-translation' = 'scholarly-agent-skills\skills\ja\academic-paper-translation'
+    'pdf-translate' = 'paper-translate-agent-skill\pdf-translate'
+    'zotero-translate' = 'zotero-translate-skill\skills\zotero-translate'
+}
+foreach ($relativeRoot in @('skills', '.agents\skills', '.claude\skills')) {
+    foreach ($entry in $retiredSources.GetEnumerator()) {
+        $linkPath = [IO.Path]::GetFullPath((Join-Path (Join-Path $projectRoot $relativeRoot) $entry.Key))
+        $rootPrefix = [IO.Path]::GetFullPath($projectRoot).TrimEnd('\') + '\'
+        if (-not $linkPath.StartsWith($rootPrefix, [StringComparison]::OrdinalIgnoreCase)) {
+            throw "Refusing to remove a path outside the project: $linkPath"
+        }
+        $existing = Get-Item -LiteralPath $linkPath -Force -ErrorAction SilentlyContinue
+        if ($null -eq $existing) { continue }
+        $expected = [IO.Path]::GetFullPath((Join-Path $projectRoot $entry.Value))
+        if ($existing.LinkType -ne 'Junction' -or
+            [IO.Path]::GetFullPath([string]@($existing.Target)[0]) -ne $expected) {
+            throw "Retired skill path was preserved; inspect it manually: $linkPath"
+        }
+        Remove-Item -LiteralPath $linkPath -Force
+        Write-Output "Removed retired skill junction: $linkPath"
+    }
+}
+
 # Register the Japanese originals only; English variants have the same names.
 $scholarlyRoot = Join-Path $projectRoot 'scholarly-agent-skills\skills\ja'
 if (-not (Test-Path -LiteralPath $scholarlyRoot -PathType Container)) {
     throw 'Missing scholarly skills; run git submodule update --init --recursive first.'
 }
 foreach ($skill in Get-ChildItem -LiteralPath $scholarlyRoot -Directory | Sort-Object Name) {
+    if ($retiredSources.Contains($skill.Name)) { continue }
     if (Test-Path -LiteralPath (Join-Path $skill.FullName 'SKILL.md') -PathType Leaf) {
         if ($sources.Contains($skill.Name)) {
             throw "Duplicate upstream skill name: $($skill.Name)"
