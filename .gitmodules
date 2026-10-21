@@ -28,3 +28,6 @@
 [submodule "interactive-slide"]
 	path = interactive-slide
 	url = https://github.com/hora-algebra/interactive-slide.git
+[submodule "agent-builder-skills"]
+	path = agent-builder-skills
+	url = https://github.com/minorun365/agent-builder-skills.git

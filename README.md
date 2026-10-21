@@ -82,8 +82,22 @@ Gitでジャンクションを配布することは想定していません。�
 | [toku345/marp-slides](https://github.com/toku345/marp-slides) | `creating-marp-slides` | `marp-slides/.claude/skills/creating-marp-slides` |
 | [softaworks/agent-toolkit](https://github.com/softaworks/agent-toolkit) | `marp-slide` | `agent-toolkit/skills/marp-slide` |
 | [hora-algebra/interactive-slide](https://github.com/hora-algebra/interactive-slide) | `interactive-slide` | `interactive-slide/plugins/interactive-slide/skills/interactive-slide` |
+| [minorun365/agent-builder-skills](https://github.com/minorun365/agent-builder-skills) | AWSのエージェントWebアプリ開発用8スキル（下表） | `agent-builder-skills/skills/<スキル名>` |
 
-6リポジトリはGitサブモジュールとしてクローンしています。Scholarlyは日本語版のみ、agent-toolkitは指定されたMarpスキルのみを登録し、同名の英語版や無関係なスキルは読み込み先に追加しません。既存5スキルと合わせて34スキルをこのプロジェクトで使う構成です。
+7リポジトリはGitサブモジュールとしてクローンしています。Scholarlyは日本語版のみ、agent-toolkitは指定されたMarpスキルのみを登録し、同名の英語版や無関係なスキルは読み込み先に追加しません。既存5スキルと合わせて42スキルをこのプロジェクトで使う構成です。
+
+Agent Builderから登録するスキルは次の8つです。スキルと参照資料の登録であり、AWSへのデプロイや認証設定は実行しません。
+
+| 呼び出し名 | 用途 |
+| --- | --- |
+| `kb-agent-webapp-cdk` | Webアプリ全体の構成、S3・CloudFrontでの配信 |
+| `kb-agentcore-cdk` | AgentCore RuntimeのCDK定義、認証、コンテナ |
+| `kb-strands-agentcore` | Strands Agentsのエージェント・ツール・会話履歴 |
+| `kb-agentcore-observability` | トレース、メトリクス、監視の調査 |
+| `kb-agentcore-identity` | 外部サービスに接続するための認証 |
+| `kb-demo-app-auth` | Cognito、Googleログイン、パスキー |
+| `kb-frontend-sse` | SSEによる応答のストリーミング |
+| `cdkd-deploy` | コミュニティ製CDKDによるCDKのデプロイ |
 
 設定後の次のターンから利用できます。一覧が更新されない場合は、このプロジェクトで新しいチャットを開いてください。呼び出し例:
 

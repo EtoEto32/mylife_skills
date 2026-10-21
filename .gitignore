@@ -48,3 +48,13 @@ node_modules/
 /skills/source-criticism-gate
 /skills/submission-venue-advisor
 /skills/terminology-consistency
+
+# Agent Builder skill junctions; upstream contents stay in the submodule.
+/skills/kb-agent-webapp-cdk
+/skills/kb-agentcore-cdk
+/skills/kb-strands-agentcore
+/skills/kb-agentcore-observability
+/skills/kb-agentcore-identity
+/skills/kb-demo-app-auth
+/skills/kb-frontend-sse
+/skills/cdkd-deploy

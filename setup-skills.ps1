@@ -17,6 +17,14 @@ $sources = [ordered]@{
     'creating-marp-slides' = 'marp-slides\.claude\skills\creating-marp-slides'
     'marp-slide'        = 'agent-toolkit\skills\marp-slide'
     'interactive-slide' = 'interactive-slide\plugins\interactive-slide\skills\interactive-slide'
+    'kb-agent-webapp-cdk' = 'agent-builder-skills\skills\kb-agent-webapp-cdk'
+    'kb-agentcore-cdk' = 'agent-builder-skills\skills\kb-agentcore-cdk'
+    'kb-strands-agentcore' = 'agent-builder-skills\skills\kb-strands-agentcore'
+    'kb-agentcore-observability' = 'agent-builder-skills\skills\kb-agentcore-observability'
+    'kb-agentcore-identity' = 'agent-builder-skills\skills\kb-agentcore-identity'
+    'kb-demo-app-auth' = 'agent-builder-skills\skills\kb-demo-app-auth'
+    'kb-frontend-sse' = 'agent-builder-skills\skills\kb-frontend-sse'
+    'cdkd-deploy' = 'agent-builder-skills\skills\cdkd-deploy'
 }
 
 # Register the Japanese originals only; English variants have the same names.
