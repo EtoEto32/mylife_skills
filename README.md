@@ -8,7 +8,7 @@ CodexとClaude Codeで使うスキルをまとめたリポジトリです。論�
 
 ## 現在使えるskills
 
-登録しているスキルは50件です。外部スキル49件と、自作の翻訳スキル1件を含みます。以下の名前は`setup-skills.ps1`の登録名です。
+登録対象のスキルは51件です。外部スキル49件と、自作スキル2件を含みます。外部スキルは`setup-skills.ps1`の登録名、自作スキルは`skills/`内のフォルダ名を記載しています。
 
 ### 文章・翻訳・会話のノート化
 
@@ -55,6 +55,7 @@ CodexとClaude Codeで使うスキルをまとめたリポジトリです。論�
 
 | スキル名 | 用途 |
 | --- | --- |
+| `draft-to-slides` | 叩き台のPPTXの日本語と意図をなるべく残し、配置・図解・デザイン・視認性を改善してPPTXに仕上げる自作スキル |
 | `marp-creator` | メモの整理から構成を考え、Marpスライドを作る |
 | `slide-story` | 登壇・講義スライドの流れ、見出し、発表時間を検討する |
 | `slide-design-dark` | 黒地のMarpスライドの余白、配色、表などを整える |
@@ -64,6 +65,8 @@ CodexとClaude Codeで使うスキルをまとめたリポジトリです。論�
 | `interactive-slide` | 発表資料を、図や操作機能を含むHTMLスライドにする |
 
 配布元は[classmethod-marp-theme](https://github.com/classmethod/classmethod-marp-theme)、[minorun-marp-skill](https://github.com/minorun365/minorun-marp-skill)、[marp-slides](https://github.com/toku345/marp-slides)、[agent-toolkit](https://github.com/softaworks/agent-toolkit)、[interactive-slide](https://github.com/hora-algebra/interactive-slide)です。
+
+自作の[`draft-to-slides`](skills/draft-to-slides/SKILL.md)は、学会発表・ゼミ・LTなどの既存PPTXを整えるときに使います。発表者ノートに書かれた図解・画像生成の希望も読み、書体をUDデジタル教科書体に統一します。完成したPPTXは原稿と照合し、全スライドの表示を確認します。構成から一から作る場合は、用途に合う別のスライド作成スキルを使ってください。
 
 ### Obsidian
 
@@ -140,7 +143,7 @@ skills/slide-story/                   編集・整理用のリンク
 .claude/skills/slide-story/           Claude Code用のリンク
 ```
 
-リンクは同じフォルダを指します。`SKILL.md`だけでなく、`references/`、`scripts/`、`assets/`も共有するため、コピー同士を同期する必要はありません。自作の`academic-paper-ja-translator`は`skills/`内の実フォルダを共有元にしています。
+リンクは同じフォルダを指します。`SKILL.md`だけでなく、`references/`、`scripts/`、`assets/`も共有するため、コピー同士を同期する必要はありません。自作の`academic-paper-ja-translator`と`draft-to-slides`は、`skills/`内の実フォルダを共有元にしています。
 
 この設定はプロジェクト内で使うものです。全プロジェクト共通のユーザースキル領域には追加しません。Windowsでのパスや保存先の扱いは`AGENTS.md`に記載しています。スキル内の相対パスは、リンクの見かけの場所ではなく、実体のフォルダを基準に読みます。
 
@@ -175,6 +178,7 @@ git submodule update --init --recursive
 | MarpのPDF・PPTX出力 | Marp CLIと対応ブラウザ |
 | `interactive-slide` | 数式・QRコード・画面検査に使うNode.js・Pythonライブラリ |
 | 論文翻訳のファイル出力 | 出力形式に応じたPDF抽出・組版ツール |
+| `draft-to-slides` | PPTXの編集・描画・表示確認に使うツールと、UDデジタル教科書体 |
 
 スキルの追加だけでは、APIアカウントの作成や認証、AWSへのデプロイは実行しません。
 
